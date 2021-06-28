@@ -5,4 +5,15 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="profile">Profile</string>
+    <string name="save">Save</string>
+    <string name="existing_health_conditions">Existing Health Conditions?</string>
+    <string name="vaccines_taken">Vaccines Taken</string>
+    <string name="gender">Gender</string>
+    <string name="surname">Surname</string>
+    <string name="first_name">First Name</string>
+    <string name="add_a_child">ADD A CHILD</string>
+    <string name="infobase">InfoBase</string>
+    <string name="submit">Submit</string>
+    <string name="what_is_your_question">What is your question?</string>
+    <string name="more_questions">More questions?</string>
 </resources>
