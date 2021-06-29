@@ -87,3 +87,8 @@ Want to know more about github, here are some link to get you started:
 - [Youtube Github Tutorial](https://www.youtube.com/watch?v=_d4fFFAJKVA)
 - [Youtube Github Crash Course](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
 - [Git Cheat List](https://about.gitlab.com/images/press/git-cheat-sheet.pdf)
+
+## Copyright & License
+Kidvacc is available under the GNU Affero General Public License v3.0. See the [LICENSE FILE](https://www.gnu.org/licenses/agpl-3.0.en.html) for more information
+
+Copyright © 2020 Zuri Internship Training
