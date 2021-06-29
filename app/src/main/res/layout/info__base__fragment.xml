@@ -549,7 +549,8 @@
                         android:backgroundTint="#DA8F06"
                         android:text="@string/submit"
                         android:textColor="#FFFFFF"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        />
 
                 </LinearLayout>
 
