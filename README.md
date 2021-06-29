@@ -57,6 +57,8 @@ The reason behind this app idea is that children are often given the wrong vacci
 # Mobile
 - [Samson	Achiaga](https://github.com/certified84)
 - [Cephas	Oluwadamilola	Arowolo](https://github.com/CephasPeter)
+# Other Contributors
+- [Oluwafemi Adenuga](https://github.com/phemmylintry)
 
 ##
 ## Contribution Guide(Using Android Studio/Intellj) 
