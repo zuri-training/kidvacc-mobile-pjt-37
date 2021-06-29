@@ -5,4 +5,26 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="profile">Profile</string>
+    <string name="save">Save</string>
+    <string name="existing_health_conditions">Existing Health Conditions?</string>
+    <string name="vaccines_taken">Vaccines Taken</string>
+    <string name="gender">Gender</string>
+    <string name="surname">Surname</string>
+    <string name="first_name">First Name</string>
+    <string name="add_a_child">ADD A CHILD</string>
+    <string name="infobase">InfoBase</string>
+    <string name="submit">Submit</string>
+    <string name="what_is_your_question">What is your question?</string>
+    <string name="more_questions">More questions?</string>
+    <string name="where_can_i_get_vaccines_for_infants">Where can I get vaccines for infants?</string>
+    <string name="what_is_vaccination">What is Vaccination?</string>
+    <string name="is_vaccination_important">Is Vaccination important?</string>
+    <string name="do_infants_need_to_take_vaccines">Do infants need to take vaccines?</string>
+    <string name="what_vaccines_should_an_infant_take">What vaccines should an infant take?</string>
+    <string name="when_should_infants_take_vaccines">When should infants take vaccines?</string>
+    <string name="do_vaccines_have_side_effects_on_infants">Do vaccines have side-effects on infants?</string>
+    <string name="infobase_caps">INFOBASE</string>
+    <string name="got_questions_we_ve_got_you_covered">Got questions? We’ve got you covered!</string>
+    <string name="vaccines_cap">VACCINES</string>
+    <string name="check_for_vaccines_and_hospitals_around_you">Check for vaccines and hospitals around you!</string>
 </resources>

@@ -62,7 +62,8 @@
         android:background="@drawable/search_background"
         app:layout_constraintBottom_toTopOf="@+id/materialCardView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        >
 
         <TextView
             android:layout_width="match_parent"
@@ -130,6 +131,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
+            android:id="@+id/vaccines"
             android:layout_width="0dp"
             android:layout_height="@dimen/_100sdp"
             android:layout_marginStart="@dimen/_20sdp"
@@ -225,6 +227,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/infobase"
             android:layout_width="0dp"
             android:layout_height="@dimen/_100sdp"
             android:layout_marginStart="@dimen/_10sdp"
@@ -242,17 +245,26 @@
                 android:layout_marginBottom="@dimen/_4sdp"
                 android:scaleX=".8"
                 android:scaleY=".8"
-                android:src="@drawable/ic_faq" />
+                android:src="@drawable/ic_info" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/_5sdp"
-                android:text="FAQs"
+                android:text="@string/infobase"
                 android:textColor="#ffffff" />
 
         </LinearLayout>
 
     </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/home_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

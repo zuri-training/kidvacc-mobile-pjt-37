@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.add_a_child.Add_A_Child">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/add_a_child"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="#DA8F06"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/_20sdp"
+            app:layout_constraintBottom_toTopOf="@+id/first_name_textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeableImageView"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            app:layout_constraintBottom_toTopOf="@+id/first_name_textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+            app:srcCompat="@drawable/baby" />
+
+        <TextView
+            android:id="@+id/first_name_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:text="@string/first_name"
+            android:textColor="#08517A"
+            app:layout_constraintBottom_toTopOf="@+id/first_name" />
+
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:background="@drawable/edit_text_background"
+            android:outlineProvider="none"
+            app:layout_constraintBottom_toTopOf="@+id/surname_textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/surname_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:text="@string/surname"
+            android:textColor="#08517A"
+            app:layout_constraintBottom_toTopOf="@+id/surname" />
+
+        <EditText
+            android:id="@+id/surname"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:background="@drawable/edit_text_background"
+            android:outlineProvider="none"
+            app:layout_constraintBottom_toTopOf="@+id/dob_textview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/dob_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:text="Date Of Birth"
+            android:textColor="#08517A"
+            app:layout_constraintBottom_toTopOf="@+id/day_month_year_container" />
+
+        <LinearLayout
+            android:id="@+id/day_month_year_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/gender_textview">
+
+            <RelativeLayout
+                android:id="@+id/day_spinner_container"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_background">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/day_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:backgroundTint="#DA8F06"
+                    android:outlineProvider="none" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/month_spinner_container"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_background">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/month_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:backgroundTint="#DA8F06"
+                    android:outlineProvider="none" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/year_spinner_container"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_background">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/year_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:backgroundTint="#DA8F06"
+                    android:outlineProvider="none" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/gender_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:text="@string/gender"
+            android:textColor="#08517A"
+            app:layout_constraintBottom_toTopOf="@+id/gender_spinner_container" />
+
+        <RelativeLayout
+            android:id="@+id/gender_spinner_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@drawable/edit_text_background"
+            app:layout_constraintBottom_toTopOf="@+id/vaccines_taken_textview"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/gender_spinner"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:backgroundTint="#DA8F06"
+                android:outlineProvider="none" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/vaccines_taken_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:text="@string/vaccines_taken"
+            android:textColor="#08517A"
+            app:layout_constraintBottom_toTopOf="@+id/vaccines_spinner_container" />
+
+        <RelativeLayout
+            android:id="@+id/vaccines_spinner_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@drawable/edit_text_background"
+            app:layout_constraintBottom_toTopOf="@+id/existing_health_condition"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/vaccines_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:backgroundTint="#DA8F06"
+                android:outlineProvider="none" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/existing_health_condition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:text="@string/existing_health_conditions"
+            android:textColor="#08517A"
+            app:layout_constraintBottom_toTopOf="@+id/other_editText" />
+
+        <EditText
+            android:id="@+id/other_editText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:background="@drawable/edit_text_background"
+            android:outlineProvider="none"
+            app:layout_constraintBottom_toTopOf="@+id/save_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/save_button"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:backgroundTint="#DA8F06"
+            android:text="@string/save"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textStyle="bold"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
