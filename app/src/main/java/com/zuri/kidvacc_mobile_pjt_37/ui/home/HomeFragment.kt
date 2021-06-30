@@ -1,13 +1,19 @@
 package com.zuri.kidvacc_mobile_pjt_37.ui.home
 
 import android.content.Context
+import android.graphics.Typeface
 import android.os.Bundle
+import android.text.Spannable
+import android.text.SpannableStringBuilder
+import android.text.style.StyleSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.zuri.kidvacc_mobile_pjt_37.R
 import com.zuri.kidvacc_mobile_pjt_37.ui.add_a_child.Add_A_Child
@@ -20,9 +26,21 @@ class HomeFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         homeViewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
+
         val root = inflater.inflate(R.layout.fragment_home, container, false)
+
         val sharedPref = requireActivity().getSharedPreferences("com.zuri.kidvacc_mobile_pjt_37", Context.MODE_PRIVATE)
         val openOnBoardingScreen = sharedPref.getBoolean("Open OnBoarding Screen", true)
+
+        val quoteText = root.findViewById<TextView>(R.id.quote_text)
+
+        homeViewModel.text.observe(viewLifecycleOwner, Observer {
+            val quote = it.toString().split("-")
+            val spannable = SpannableStringBuilder(it)
+            spannable.setSpan(StyleSpan (Typeface.BOLD), 0, quote[0].length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+            spannable.setSpan(StyleSpan (Typeface.ITALIC), quote[0].length, spannable.length-1, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+            quoteText.text = spannable
+        })
 
         root.findViewById<View>(R.id.relativeLayout).setOnClickListener {
             val fm: FragmentManager? = requireActivity().supportFragmentManager

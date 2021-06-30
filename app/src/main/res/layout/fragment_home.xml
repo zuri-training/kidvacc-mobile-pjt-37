@@ -116,6 +116,18 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/ic_rectangle_31" />
 
+            <TextView
+                android:id="@+id/quote_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:lineSpacingMultiplier="1.4"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="#ffffff"
+                />
+
         </RelativeLayout>
 
     </com.google.android.material.card.MaterialCardView>

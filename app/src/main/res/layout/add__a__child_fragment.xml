@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
+    android:clickable="true"
     tools:context=".ui.add_a_child.Add_A_Child">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -56,6 +57,7 @@
             android:layout_marginBottom="@dimen/_15sdp"
             android:paddingStart="@dimen/_15sdp"
             android:paddingEnd="@dimen/_15sdp"
+            android:hint="Joseph"
             android:background="@drawable/edit_text_background"
             android:outlineProvider="none"
             app:layout_constraintBottom_toTopOf="@+id/surname_textView"
@@ -84,6 +86,7 @@
             android:paddingEnd="@dimen/_15sdp"
             android:background="@drawable/edit_text_background"
             android:outlineProvider="none"
+            android:hint="Williams"
             app:layout_constraintBottom_toTopOf="@+id/dob_textview"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
