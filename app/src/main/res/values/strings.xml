@@ -48,4 +48,11 @@
     <string name="have_an_account_already">Have an account already?</string>
     <string name="login_here">Login here</string>
     <string name="create_an_account_for_ease_of_access_and_use">Create an Account for ease of access and use</string>
+    <string name="login">Login</string>
+    <string name="min_8_characters">Min. 8 characters</string>
+    <string name="name_example_etceteria_com">name@example.etceteria.com</string>
+    <string name="first_name_amp_last_name">First name &amp; Last name</string>
+    <string name="sign_up_with_facebook">Sign up with Facebook</string>
+    <string name="_1234567890">1234567890</string>
+    <string name="sign_up_with_google">Sign up with Google</string>
 </resources>
