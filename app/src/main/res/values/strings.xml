@@ -29,7 +29,30 @@
     <string name="check_for_vaccines_and_hospitals_around_you">Check for vaccines and hospitals around you!</string>
     <string name="next">Next</string>
     <string name="skip">Skip</string>
+
+    <string name="access_all_kidvacc_services_at_the_tip_of_your_fingers">Access all KidVacc Services at the tip of your fingers</string>
+    <string name="sign_in_with_facebook">Sign in with Facebook</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="or_sign_in_with_email">or Sign in with email</string>
+    <string name="or_sign_up_with_email">or Sign up with email</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="not_registered_yet">Not registered yet?</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="full_name">Full Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="have_an_account_already">Have an account already?</string>
+    <string name="login_here">Login here</string>
+    <string name="create_an_account_for_ease_of_access_and_use">Create an Account for ease of access and use</string>
     <string name="login">Login</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="min_8_characters">Min. 8 characters</string>
+    <string name="name_example_etceteria_com">name@example.etceteria.com</string>
+    <string name="first_name_amp_last_name">First name &amp; Last name</string>
+    <string name="sign_up_with_facebook">Sign up with Facebook</string>
+    <string name="_1234567890">1234567890</string>
+    <string name="sign_up_with_google">Sign up with Google</string>
 </resources>
