@@ -16,7 +16,20 @@
     <string name="submit">Submit</string>
     <string name="what_is_your_question">What is your question?</string>
     <string name="more_questions">More questions?</string>
-    <string name="login">Login</string>
+    <string name="where_can_i_get_vaccines_for_infants">Where can I get vaccines for infants?</string>
+    <string name="what_is_vaccination">What is Vaccination?</string>
+    <string name="is_vaccination_important">Is Vaccination important?</string>
+    <string name="do_infants_need_to_take_vaccines">Do infants need to take vaccines?</string>
+    <string name="what_vaccines_should_an_infant_take">What vaccines should an infant take?</string>
+    <string name="when_should_infants_take_vaccines">When should infants take vaccines?</string>
+    <string name="do_vaccines_have_side_effects_on_infants">Do vaccines have side-effects on infants?</string>
+    <string name="infobase_caps">INFOBASE</string>
+    <string name="got_questions_we_ve_got_you_covered">Got questions? We’ve got you covered!</string>
+    <string name="vaccines_cap">VACCINES</string>
+    <string name="check_for_vaccines_and_hospitals_around_you">Check for vaccines and hospitals around you!</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+
     <string name="access_all_kidvacc_services_at_the_tip_of_your_fingers">Access all KidVacc Services at the tip of your fingers</string>
     <string name="sign_in_with_facebook">Sign in with Facebook</string>
     <string name="sign_in_with_google">Sign in with Google</string>
@@ -35,10 +48,4 @@
     <string name="have_an_account_already">Have an account already?</string>
     <string name="login_here">Login here</string>
     <string name="create_an_account_for_ease_of_access_and_use">Create an Account for ease of access and use</string>
-    <string name="sign_up_with_google">Sign up with Google</string>
-    <string name="sign_up_with_facebook">Sign up with Facebook</string>
-    <string name="first_name_amp_last_name"><![CDATA[First name & Last name]]></string>
-    <string name="min_8_characters">Min. 8 Characters</string>
-    <string name="name_example_etceteria_com">name@example.etceteria.com</string>
-    <string name="_1234567890">1234567890</string>
 </resources>

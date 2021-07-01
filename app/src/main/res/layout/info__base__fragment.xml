@@ -5,63 +5,560 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
+    android:clickable="true"
     tools:context=".ui.infobase.Info_Base_Fragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/existing_health_condition"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/infobase_caps"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="#DA8F06"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/more_questions"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_gravity="center_vertical|start"
+            android:text="@string/got_questions_we_ve_got_you_covered"
             android:textColor="@color/text_color"
-            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-            android:layout_marginStart="@dimen/_20sdp"
-            android:layout_marginEnd="@dimen/_20sdp"
-            android:layout_marginBottom="@dimen/_3sdp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            android:layout_below="@id/textView" />
 
-        <LinearLayout
-            android:id="@+id/linearLayout"
+        <View
+            android:id="@+id/view"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#DA8F06"
             android:layout_marginStart="@dimen/_20sdp"
             android:layout_marginEnd="@dimen/_20sdp"
-            android:layout_marginBottom="@dimen/_10sdp"
-            android:background="@drawable/edittext_background_1"
-            android:orientation="vertical"
-            android:elevation="@dimen/_1sdp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_below="@id/textView2" />
 
-            <EditText
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fillViewport="true"
+            android:layout_below="@id/view"
+            android:requiresFadingEdge="vertical">
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_150sdp"
-                android:background="@android:color/transparent"
-                android:elevation="-1dp"
-                android:gravity="start"
-                android:hint="@string/what_is_your_question"
-                android:padding="@dimen/_10sdp"
-                android:textStyle="italic" />
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/save_button"
-                android:layout_width="@dimen/_80sdp"
-                android:layout_height="@dimen/_40sdp"
-                android:layout_gravity="end"
-                android:layout_marginEnd="@dimen/_20sdp"
-                android:layout_marginBottom="@dimen/_5sdp"
-                android:backgroundTint="#DA8F06"
-                android:text="@string/submit"
-                android:textColor="#FFFFFF"
-                android:textStyle="bold" />
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    >
 
-        </LinearLayout>
+                    <com.github.florent37.expansionpanel.ExpansionHeader
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        app:expansion_headerIndicator="@id/headerIndicator1"
+                        app:expansion_layout="@id/expansionLayout1"
+                        app:expansion_toggleOnClick="true"
+                        >
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                        <!-- HEADER -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical|start"
+                            android:text="@string/what_is_vaccination"
+                            android:textColor="@color/text_color"/>
+
+                        <!-- HEADER INDICATOR -->
+                        <ImageView
+                            android:id="@+id/headerIndicator1"
+                            android:adjustViewBounds="true"
+                            android:layout_gravity="center_vertical|end"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            app:srcCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+                    </com.github.florent37.expansionpanel.ExpansionHeader>
+
+                    <com.github.florent37.expansionpanel.ExpansionLayout
+                        android:id="@+id/expansionLayout1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        >
+
+                        <!-- CONTENT -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </com.github.florent37.expansionpanel.ExpansionLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:background="#E8E8E8"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    >
+
+                    <com.github.florent37.expansionpanel.ExpansionHeader
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        app:expansion_headerIndicator="@id/headerIndicator2"
+                        app:expansion_layout="@id/expansionLayout2"
+                        app:expansion_toggleOnClick="true"
+                        >
+
+                        <!-- HEADER -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical|start"
+                            android:text="@string/is_vaccination_important"
+                            android:textColor="@color/text_color"/>
+
+                        <!-- HEADER INDICATOR -->
+                        <ImageView
+                            android:id="@+id/headerIndicator2"
+                            android:adjustViewBounds="true"
+                            android:layout_gravity="center_vertical|end"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            app:srcCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+                    </com.github.florent37.expansionpanel.ExpansionHeader>
+
+                    <com.github.florent37.expansionpanel.ExpansionLayout
+                        android:id="@+id/expansionLayout2"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        >
+
+                        <!-- CONTENT -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </com.github.florent37.expansionpanel.ExpansionLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:background="#E8E8E8"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    >
+
+                    <com.github.florent37.expansionpanel.ExpansionHeader
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        app:expansion_headerIndicator="@id/headerIndicator3"
+                        app:expansion_layout="@id/expansionLayout3"
+                        app:expansion_toggleOnClick="true"
+                        >
+
+                        <!-- HEADER -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical|start"
+                            android:text="@string/do_infants_need_to_take_vaccines"
+                            android:textColor="@color/text_color"/>
+
+                        <!-- HEADER INDICATOR -->
+                        <ImageView
+                            android:id="@+id/headerIndicator3"
+                            android:adjustViewBounds="true"
+                            android:layout_gravity="center_vertical|end"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            app:srcCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+                    </com.github.florent37.expansionpanel.ExpansionHeader>
+
+                    <com.github.florent37.expansionpanel.ExpansionLayout
+                        android:id="@+id/expansionLayout3"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        >
+
+                        <!-- CONTENT -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </com.github.florent37.expansionpanel.ExpansionLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:background="#E8E8E8"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    >
+
+                    <com.github.florent37.expansionpanel.ExpansionHeader
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        app:expansion_headerIndicator="@id/headerIndicator4"
+                        app:expansion_layout="@id/expansionLayout4"
+                        app:expansion_toggleOnClick="true"
+                        >
+
+                        <!-- HEADER -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical|start"
+                            android:text="@string/what_vaccines_should_an_infant_take"
+                            android:textColor="@color/text_color"/>
+
+                        <!-- HEADER INDICATOR -->
+                        <ImageView
+                            android:id="@+id/headerIndicator4"
+                            android:adjustViewBounds="true"
+                            android:layout_gravity="center_vertical|end"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            app:srcCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+                    </com.github.florent37.expansionpanel.ExpansionHeader>
+
+                    <com.github.florent37.expansionpanel.ExpansionLayout
+                        android:id="@+id/expansionLayout4"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        >
+
+                        <!-- CONTENT -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </com.github.florent37.expansionpanel.ExpansionLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:background="#E8E8E8"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout5"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    >
+
+                    <com.github.florent37.expansionpanel.ExpansionHeader
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        app:expansion_headerIndicator="@id/headerIndicator5"
+                        app:expansion_layout="@id/expansionLayout5"
+                        app:expansion_toggleOnClick="true"
+                        >
+
+                        <!-- HEADER -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical|start"
+                            android:text="@string/when_should_infants_take_vaccines"
+                            android:textColor="@color/text_color"/>
+
+                        <!-- HEADER INDICATOR -->
+                        <ImageView
+                            android:id="@+id/headerIndicator5"
+                            android:adjustViewBounds="true"
+                            android:layout_gravity="center_vertical|end"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            app:srcCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+                    </com.github.florent37.expansionpanel.ExpansionHeader>
+
+                    <com.github.florent37.expansionpanel.ExpansionLayout
+                        android:id="@+id/expansionLayout5"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        >
+
+                        <!-- CONTENT -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </com.github.florent37.expansionpanel.ExpansionLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:background="#E8E8E8"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout6"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    >
+
+                    <com.github.florent37.expansionpanel.ExpansionHeader
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        app:expansion_headerIndicator="@id/headerIndicator6"
+                        app:expansion_layout="@id/expansionLayout6"
+                        app:expansion_toggleOnClick="true"
+                        >
+
+                        <!-- HEADER -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical|start"
+                            android:text="@string/do_vaccines_have_side_effects_on_infants"
+                            android:textColor="@color/text_color"/>
+
+                        <!-- HEADER INDICATOR -->
+                        <ImageView
+                            android:id="@+id/headerIndicator6"
+                            android:adjustViewBounds="true"
+                            android:layout_gravity="center_vertical|end"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            app:srcCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+                    </com.github.florent37.expansionpanel.ExpansionHeader>
+
+                    <com.github.florent37.expansionpanel.ExpansionLayout
+                        android:id="@+id/expansionLayout6"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        >
+
+                        <!-- CONTENT -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </com.github.florent37.expansionpanel.ExpansionLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:background="#E8E8E8"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout7"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toTopOf="@+id/more_questions"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    >
+
+                    <com.github.florent37.expansionpanel.ExpansionHeader
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        app:expansion_headerIndicator="@id/headerIndicator7"
+                        app:expansion_layout="@id/expansionLayout7"
+                        app:expansion_toggleOnClick="true"
+                        >
+
+                        <!-- HEADER -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical|start"
+                            android:text="@string/where_can_i_get_vaccines_for_infants"
+                            android:textColor="@color/text_color"/>
+
+                        <!-- HEADER INDICATOR -->
+                        <ImageView
+                            android:id="@+id/headerIndicator7"
+                            android:adjustViewBounds="true"
+                            android:layout_gravity="center_vertical|end"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            app:srcCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+                    </com.github.florent37.expansionpanel.ExpansionHeader>
+
+                    <com.github.florent37.expansionpanel.ExpansionLayout
+                        android:id="@+id/expansionLayout7"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        >
+
+                        <!-- CONTENT -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </com.github.florent37.expansionpanel.ExpansionLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:background="#E8E8E8"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/more_questions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/more_questions"
+                    android:textColor="@color/text_color"
+                    app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/edittext_background_1"
+                    android:orientation="vertical"
+                    android:elevation="@dimen/_1sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_150sdp"
+                        android:background="@android:color/transparent"
+                        android:elevation="-1dp"
+                        android:gravity="start"
+                        android:hint="@string/what_is_your_question"
+                        android:padding="@dimen/_10sdp"
+                        android:textStyle="italic" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/save_button"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:backgroundTint="#DA8F06"
+                        android:text="@string/submit"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
 
 </FrameLayout>
