@@ -91,4 +91,4 @@ Want to know more about github, here are some link to get you started:
 ## Copyright & License
 Kidvacc is available under the GNU Affero General Public License v3.0. See the [LICENSE FILE](https://www.gnu.org/licenses/agpl-3.0.en.html) for more information
 
-Copyright © 2020 Zuri Internship Training
+Copyright © 2021 Zuri Internship Training
