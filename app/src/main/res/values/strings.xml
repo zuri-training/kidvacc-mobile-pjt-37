@@ -32,4 +32,13 @@
     <string name="login">Login</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="get_started">Get Started</string>
+    <string name="check_hospitals">Check Hospitals</string>
+    <string name="tolaniwilliams_gmail_com_2348012345678_10b_utopia_street_agege_lagos_state">tolaniwilliams@gmail.com <br/> +2348012345678 <br/>10B, Utopia Street, Agege, Lagos State</string>
+    <string name="child">Child</string>
+    <string name="vaccine">Vaccine</string>
+    <string name="hospital">Hospital</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="edit_profile">Edit Profile</string>
 </resources>

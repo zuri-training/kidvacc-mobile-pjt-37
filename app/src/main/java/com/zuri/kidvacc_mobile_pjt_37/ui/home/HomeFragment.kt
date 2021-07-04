@@ -16,7 +16,6 @@ import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.zuri.kidvacc_mobile_pjt_37.R
-import com.zuri.kidvacc_mobile_pjt_37.ui.add_a_child.Add_A_Child
 import com.zuri.kidvacc_mobile_pjt_37.ui.infobase.Info_Base_Fragment
 import com.zuri.kidvacc_mobile_pjt_37.ui.onboarding_page.OnBoardingFragment
 import com.zuri.kidvacc_mobile_pjt_37.ui.vaccines.VaccineFragment
@@ -43,10 +42,7 @@ class HomeFragment : Fragment() {
         })
 
         root.findViewById<View>(R.id.relativeLayout).setOnClickListener {
-            val fm: FragmentManager? = requireActivity().supportFragmentManager
-            val fragmentTransaction: FragmentTransaction = fm!!.beginTransaction()
-            fragmentTransaction.replace(R.id.home_frameLayout, Add_A_Child())
-            fragmentTransaction.commit()
+
         }
 
         root.findViewById<View>(R.id.infobase).setOnClickListener {

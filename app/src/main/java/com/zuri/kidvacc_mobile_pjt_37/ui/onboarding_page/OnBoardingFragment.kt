@@ -25,9 +25,9 @@ class OnBoardingFragment : Fragment() {
     private var skip: TextView? = null
     private var login: TextView? = null
     private val arrayImageProduct = intArrayOf(
-        R.drawable.undraw_baby_ja7a_1,
-        R.drawable.undraw_baby_ja7a_1,
-        R.drawable.undraw_baby_ja7a_1
+        R.drawable.undraw_baby_ja7a_1__1_,
+        R.drawable.female_doctor_mask_gloves_makes_vaccine_child_patient_173706_412_1,
+        R.drawable.undraw_medicine_b1ol_2__1
     )
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {

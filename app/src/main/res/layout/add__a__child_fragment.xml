@@ -114,14 +114,13 @@
 
             <RelativeLayout
                 android:id="@+id/day_spinner_container"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:background="@drawable/edit_text_background">
 
                 <androidx.appcompat.widget.AppCompatSpinner
                     android:id="@+id/day_spinner"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="@dimen/_40sdp"
                     android:backgroundTint="#DA8F06"
                     android:outlineProvider="none" />
@@ -249,12 +248,12 @@
             android:paddingEnd="@dimen/_15sdp"
             android:background="@drawable/edit_text_background"
             android:outlineProvider="none"
-            app:layout_constraintBottom_toTopOf="@+id/save_button"
+            app:layout_constraintBottom_toTopOf="@+id/edit_profile"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/save_button"
+            android:id="@+id/edit_profile"
             android:layout_width="@dimen/_100sdp"
             android:layout_height="@dimen/_40sdp"
             android:layout_marginEnd="@dimen/_20sdp"
