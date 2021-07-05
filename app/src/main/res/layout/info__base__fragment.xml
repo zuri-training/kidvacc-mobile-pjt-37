@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
+    android:clickable="true"
     tools:context=".ui.infobase.Info_Base_Fragment">
 
     <RelativeLayout
@@ -540,7 +541,7 @@
                         android:textStyle="italic" />
 
                     <com.google.android.material.button.MaterialButton
-                        android:id="@+id/save_button"
+                        android:id="@+id/submit"
                         android:layout_width="@dimen/_80sdp"
                         android:layout_height="@dimen/_40sdp"
                         android:layout_gravity="end"

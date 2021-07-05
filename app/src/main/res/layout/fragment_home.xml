@@ -65,14 +65,18 @@
         app:layout_constraintStart_toStartOf="parent"
         >
 
-        <TextView
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_toStartOf="@id/search_img"
             android:gravity="center_vertical"
-            android:text="Search Vaccines, Hospitals, Keywords....."
-            android:textStyle="italic" />
+            android:hint="Search Vaccines, Hospitals, Keywords....."
+            android:textStyle="italic"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:background="@android:color/transparent"/>
 
         <ImageView
             android:id="@+id/search_img"
@@ -115,6 +119,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/ic_rectangle_31" />
+
+            <TextView
+                android:id="@+id/quote_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:lineSpacingMultiplier="1.4"
+                android:textColor="#ffffff"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                />
 
         </RelativeLayout>
 

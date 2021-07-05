@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        tools:context=".ui.signup.SignUpPage"
+        android:clickable="true"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:srcCompat="@drawable/kidvacc_logo" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".ui.signup.SignupFragment"
+            android:layout_centerInParent="true">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:text="Sign Up"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/create_an_account_for_ease_of_access_and_use"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintEnd_toEndOf="@+id/materialTextView"
+                app:layout_constraintStart_toStartOf="@+id/materialTextView"
+                app:layout_constraintTop_toBottomOf="@+id/materialTextView" />
+
+             <com.google.android.material.button.MaterialButton
+                 android:id="@+id/btn_facebook"
+                 android:layout_width="0dp"
+                 android:layout_height="@dimen/_40sdp"
+                 android:layout_marginTop="@dimen/_16sdp"
+                 android:text="@string/sign_up_with_facebook"
+                 style="@style/Widget.MaterialComponents.Button.TextButton"
+                 android:textAllCaps="false"
+                 android:textColor="@color/text_color"
+                 app:iconTint="@null"
+                 android:textSize="@dimen/_11ssp"
+                 app:cornerRadius="@dimen/_4sdp"
+                 app:icon="@drawable/facebook_logo"
+                 app:iconGravity="textStart"
+                 app:layout_constraintEnd_toEndOf="@+id/materialTextView2"
+                 app:layout_constraintStart_toStartOf="@+id/materialTextView2"
+                 app:layout_constraintTop_toBottomOf="@+id/materialTextView2"
+                 app:strokeColor="@color/purple_700"
+                 app:strokeWidth="@dimen/_1sdp" />
+
+             <com.google.android.material.button.MaterialButton
+                 android:id="@+id/btn_google"
+                 android:layout_width="0dp"
+                 android:layout_height="@dimen/_40sdp"
+                 android:layout_marginTop="@dimen/_16sdp"
+                 android:text="@string/sign_up_with_google"
+                 style="@style/Widget.MaterialComponents.Button.TextButton"
+                 android:textAllCaps="false"
+                 android:textColor="@color/text_color"
+                 android:textSize="@dimen/_11ssp"
+                 app:cornerRadius="@dimen/_4sdp"
+                 app:icon="@drawable/google_logo"
+                 app:iconGravity="textStart"
+                 app:iconTint="@null"
+                 app:layout_constraintEnd_toEndOf="@+id/btn_facebook"
+                 app:layout_constraintStart_toStartOf="@+id/btn_facebook"
+                 app:layout_constraintTop_toBottomOf="@+id/btn_facebook"
+                 app:strokeColor="@color/purple_700"
+                 app:strokeWidth="@dimen/_1sdp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_sign_up"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="@string/sign_up_with_email"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                app:cornerRadius="@dimen/_4sdp"
+                app:layout_constraintTop_toBottomOf="@id/btn_google"
+                app:layout_constraintEnd_toEndOf="@+id/btn_google"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/btn_google"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_25sdp"
+                android:text="@string/have_an_account_already"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toStartOf="@+id/logInTextView"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_sign_up"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/logInTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:text="@string/login_here"
+                android:textColor="#DA8F06"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/materialTextView4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/materialTextView4"
+                app:layout_constraintTop_toTopOf="@+id/materialTextView4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+</layout>

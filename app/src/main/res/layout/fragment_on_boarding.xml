@@ -11,9 +11,9 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_30sdp"
-        android:src="@drawable/kidvacc_logo"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:src="@drawable/logo__1_bigger"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,7 +30,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true" />
+            android:layout_alignParentTop="true"
+            android:layout_above="@id/layout_dots"/>
 
         <LinearLayout
             android:id="@+id/layout_dots"
@@ -89,7 +90,7 @@
             android:layout_centerInParent="true"
             android:layout_marginStart="@dimen/_45sdp"
             android:layout_marginEnd="@dimen/_45sdp"
-            android:text="@string/login"
+            android:text="@string/get_started"
             android:gravity="center"
             android:background="@drawable/login_buttin_background"
             android:textColor="#FFFFFF"
