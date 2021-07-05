@@ -26,20 +26,39 @@ The reason behind this app idea is that children are often given the wrong vacci
 - Abilty to add and update children info, e.t.c.
 
 ## App ScreenShots
-# OnBoarding Page
-![Screenshot_20210705-112437](https://user-images.githubusercontent.com/52112132/124458000-61226e00-dd84-11eb-88a7-a0fa39f4a7de.png)
-![Screenshot_20210705-112442](https://user-images.githubusercontent.com/52112132/124458027-6a133f80-dd84-11eb-8186-cdc5e941fad9.png)
-![Screenshot_20210705-112447](https://user-images.githubusercontent.com/52112132/124457929-47812680-dd84-11eb-96ac-2e867bcccfa4.png)
-# Sign In And Sign Up Pages
-![Screenshot_20210705-112453](https://user-images.githubusercontent.com/52112132/124458119-86af7780-dd84-11eb-9d95-ea59f272fe7b.png)
-![Screenshot_20210705-112459](https://user-images.githubusercontent.com/52112132/124458147-9038df80-dd84-11eb-8fb0-0b6859c0b97c.png)
-![Screenshot_20210705-112504](https://user-images.githubusercontent.com/52112132/124458231-a3e44600-dd84-11eb-8be6-c6bced760ef2.png)
-# Others
-![Screenshot_20210705-112509](https://user-images.githubusercontent.com/52112132/124458306-b65e7f80-dd84-11eb-941d-7367a7cce103.png)
-![Screenshot_20210705-112528](https://user-images.githubusercontent.com/52112132/124458337-beb6ba80-dd84-11eb-88e7-a0aab508f478.png)
-![Screenshot_20210705-112542](https://user-images.githubusercontent.com/52112132/124458366-c8402280-dd84-11eb-9c98-915f33c7eba8.png)
-![Screenshot_20210705-112556](https://user-images.githubusercontent.com/52112132/124458384-cf673080-dd84-11eb-9894-3f847dd1f1b2.png)
+<table>
+  <tr>
+    <td>OnBoarding Page</td>
+  </tr>
+  <tr>
+    <td><img src="App ScreenShots/Screenshot_20210705-112437.png" width=250 height=480></td>
+    <td><img src="App ScreenShots/Screenshot_20210705-112442.png" width=250 height=480></td>
+    <td><img src="App ScreenShots/Screenshot_20210705-112447.png" width=250 height=480></td>
+  </tr>
+ </table>
 
+<table>
+  <tr>
+    <td>Sign In And Sign Up Pages</td>
+  </tr>
+  <tr>
+    <td><img src="App ScreenShots/Screenshot_20210705-112453.png" width=250 height=480></td>
+    <td><img src="App ScreenShots/Screenshot_20210705-112459.png" width=250 height=480></td>
+    <td><img src="App ScreenShots/Screenshot_20210705-112504.png" width=250 height=480></td>
+  </tr>
+ </table>
+ 
+ <table>
+  <tr>
+    <td>Others</td>
+  </tr>
+  <tr>
+    <td><img src="App ScreenShots/Screenshot_20210705-112509.png" width=250 height=480></td>
+    <td><img src="App ScreenShots/Screenshot_20210705-112528.png" width=250 height=480></td>
+    <td><img src="App ScreenShots/Screenshot_20210705-112542.png" width=250 height=480></td>
+    <td><img src="App ScreenShots/Screenshot_20210705-112556.png" width=250 height=480></td>
+  </tr>
+ </table>
 
 - [Additional Info](https://docs.google.com/spreadsheets/u/0/d/12XfMgeXYsXKR3ycP-vXLj7sEBXBN47oo1o5kHayHUZc/htmlview#)
 
