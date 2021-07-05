@@ -127,6 +127,6 @@ Want to know more about github, here are some link to get you started:
 - [Git Cheat List](https://about.gitlab.com/images/press/git-cheat-sheet.pdf)
 
 ## Copyright & License
-Kidvacc is available under the GNU Affero General Public License v3.0. See the [LICENSE FILE](https://www.gnu.org/licenses/agpl-3.0.en.html) for more information
+Kidvacc is available under the GNU Affero General Public License v3.0. See the [LICENSE](https://www.gnu.org/licenses/agpl-3.0.en.html) for more information
 
 Copyright © 2021 Zuri Internship Training
