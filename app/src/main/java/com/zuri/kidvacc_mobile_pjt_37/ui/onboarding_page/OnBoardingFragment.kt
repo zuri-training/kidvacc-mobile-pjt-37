@@ -11,10 +11,13 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
 import androidx.viewpager.widget.ViewPager
 import com.zuri.kidvacc_mobile_pjt_37.R
 import com.zuri.kidvacc_mobile_pjt_37.ui.adapters.AdapterImageSlider
 import com.zuri.kidvacc_mobile_pjt_37.ui.models.Image
+import com.zuri.kidvacc_mobile_pjt_37.ui.signup.SignUpPage
 import java.util.*
 
 class OnBoardingFragment : Fragment() {
@@ -82,12 +85,7 @@ class OnBoardingFragment : Fragment() {
         }
 
         login!!.setOnClickListener {
-            if (sharedPref != null) {
-                with (sharedPref.edit()) {
-                    putBoolean("Open OnBoarding Screen", false)
-                    apply()
-                }
-            }
+            openSignUpFragment()
             requireActivity().supportFragmentManager.beginTransaction().remove(this@OnBoardingFragment).commit()
         }
         
@@ -113,5 +111,12 @@ class OnBoardingFragment : Fragment() {
         if (dots.isNotEmpty()) {
             dots[current]!!.setColorFilter(ContextCompat.getColor(requireActivity(), R.color.overlay), PorterDuff.Mode.SRC_ATOP)
         }
+    }
+
+    private fun openSignUpFragment(){
+        val fm: FragmentManager = requireActivity().supportFragmentManager
+        val fragmentTransaction: FragmentTransaction = fm.beginTransaction()
+        fragmentTransaction.replace(R.id.fullscreen_frameLayout, SignUpPage())
+        fragmentTransaction.commit()
     }
 }

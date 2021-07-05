@@ -18,6 +18,7 @@ class ProfileFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         viewModel = ViewModelProvider(this).get(ProfileViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_profile, container, false)
+
         root.findViewById<Button>(R.id.edit_profile).setOnClickListener {
             val fm: FragmentManager? = requireActivity().supportFragmentManager
             val fragmentTransaction: FragmentTransaction = fm!!.beginTransaction()
