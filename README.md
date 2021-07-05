@@ -50,7 +50,10 @@ The reason behind this app idea is that children are often given the wrong vacci
  
  <table>
   <tr>
-    <td>Others</td>
+    <td>Home</td>
+    <td>Vaccines</td>
+    <td>InfoBase</td>
+    <td>Add A Child</td>
   </tr>
   <tr>
     <td><img src="App ScreenShots/Screenshot_20210705-112509.png" width=250 height=480></td>
