@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/KidVacc.iml" filepath="$PROJECT_DIR$/.idea/modules/KidVacc.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/KidVacc.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/KidVacc.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/password-strength-meter/KidVacc.password-strength-meter.iml" filepath="$PROJECT_DIR$/.idea/modules/password-strength-meter/KidVacc.password-strength-meter.iml" />
     </modules>
   </component>
 </project>
