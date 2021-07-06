@@ -214,6 +214,7 @@
         android:layout_marginBottom="@dimen/_15sdp">
 
         <LinearLayout
+            android:id="@+id/book_appointment"
             android:layout_width="0dp"
             android:layout_height="@dimen/_100sdp"
             android:layout_marginStart="@dimen/_20sdp"
