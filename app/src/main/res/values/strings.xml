@@ -47,4 +47,8 @@
     <string name="sign_up_with_email">Sign up with Email</string>
     <string name="have_an_account_already">Have an account already?</string>
     <string name="login_here">Login here.</string>
+    <string name="notifications">NOTIFICATIONS</string>
+    <string name="recent">Recent</string>
+    <string name="older">Older</string>
+    <string name="book_appointment">BOOK APPOINTMENT</string>
 </resources>

@@ -16,6 +16,8 @@ import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.zuri.kidvacc_mobile_pjt_37.R
+import com.zuri.kidvacc_mobile_pjt_37.networking.VolleyAuth
+import com.zuri.kidvacc_mobile_pjt_37.ui.book_appointment.BookAppointmentFragment
 import com.zuri.kidvacc_mobile_pjt_37.ui.infobase.Info_Base_Fragment
 import com.zuri.kidvacc_mobile_pjt_37.ui.onboarding_page.OnBoardingFragment
 import com.zuri.kidvacc_mobile_pjt_37.ui.signup.SignUpPage
@@ -39,7 +41,7 @@ class HomeFragment : Fragment() {
             val quote = it.toString().split("-")
             val spannable = SpannableStringBuilder(it)
             spannable.setSpan(StyleSpan (Typeface.BOLD), 0, quote[0].length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
-            spannable.setSpan(StyleSpan (Typeface.ITALIC), quote[0].length, spannable.length-1, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+            spannable.setSpan(StyleSpan (Typeface.ITALIC), quote[0].length, spannable.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
             quoteText.text = spannable
         })
 
@@ -63,10 +65,19 @@ class HomeFragment : Fragment() {
             fragmentTransaction.commit()
         }
 
-        if (openOnBoardingScreen){
-            openOnBoardingFragment()
-        }else if (openSignUpScreen){
-            openSignUpFragment()
+        root.findViewById<View>(R.id.book_appointment).setOnClickListener {
+            val fm: FragmentManager = requireActivity().supportFragmentManager
+            val fragmentTransaction: FragmentTransaction = fm.beginTransaction()
+            fragmentTransaction.replace(R.id.home_frameLayout, BookAppointmentFragment())
+            fragmentTransaction.commit()
+        }
+
+        if (VolleyAuth.TOKEN.equals("0")){
+            if (openOnBoardingScreen){
+                openOnBoardingFragment()
+            }else if (openSignUpScreen){
+                openSignUpFragment()
+            }
         }
         return root
     }

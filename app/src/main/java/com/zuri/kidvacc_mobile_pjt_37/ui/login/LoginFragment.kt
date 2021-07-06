@@ -29,9 +29,7 @@ import java.util.*
 
 class LoginFragment : Fragment() {
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
-    ): View {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         // Inflate the layout for this fragment
         val sharedPref = activity?.getSharedPreferences(
             "com.zuri.kidvacc_mobile_pjt_37",
@@ -39,7 +37,7 @@ class LoginFragment : Fragment() {
         )
         val binding = FragmentLoginBinding.inflate(inflater)
         val checkboxRememberMe: MaterialCheckBox = binding.checkBoxRememberMe
-        //et_email
+
         val etEmailLayout: TextInputLayout = binding.etEmailLayout
         val emailTextView: TextInputEditText = binding.etEmail
         addTextListener(emailTextView,etEmailLayout)
@@ -61,7 +59,7 @@ class LoginFragment : Fragment() {
                 )
             }else{
                 if (email.isBlank()){
-                    etEmailLayout.error = "Email Field Can't Be Empty"
+                    etEmailLayout.error = "Username Field Can't Be Empty"
                 }
 
                 if (password.isEmpty()){
@@ -111,20 +109,27 @@ class LoginFragment : Fragment() {
             { response ->
                 val token = response.getString("key")
                 VolleyAuth.TOKEN = token
+
                 if (isChecked) {
                     sharedPref?.edit()?.putBoolean("Open SignUp Screen", false)?.apply()
                     sharedPref?.edit()?.putString("TOKEN", token)?.apply()
+                }else{
+                    sharedPref?.edit()?.putString("TOKEN", "")?.apply()
                 }
-                /*sharedPref?.edit()?.putBoolean("Open OnBoarding Screen", false)?.apply()
-                requireActivity().supportFragmentManager.beginTransaction().remove(this@LoginFragment).commit()*/
+
+                sharedPref?.edit()?.putBoolean("Open OnBoarding Screen", false)?.apply()
+                requireActivity().supportFragmentManager.beginTransaction().remove(this@LoginFragment).commit()
             }) { error ->
+
             val code = error.networkResponse.statusCode
             val errorString = String(error.networkResponse.data)
             if (code == 400){
                 Log.i("Error Code", "" + code)
                 val jsonError = JSONObject(errorString)
                 if (jsonError.getJSONArray("non_field_errors").get(0).toString().equals("Unable to log in with provided credentials.")){
-                 Toast.makeText(requireActivity(),"Invalid Details",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(requireActivity(),"Invalid Details",Toast.LENGTH_SHORT).show()
+                }else{
+                    Toast.makeText(requireActivity(),"An Error Occurred",Toast.LENGTH_SHORT).show()
                 }
             }
         }
