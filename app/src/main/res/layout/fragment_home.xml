@@ -65,14 +65,18 @@
         app:layout_constraintStart_toStartOf="parent"
         >
 
-        <TextView
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_toStartOf="@id/search_img"
             android:gravity="center_vertical"
-            android:text="Search Vaccines, Hospitals, Keywords....."
-            android:textStyle="italic" />
+            android:hint="Search Vaccines, Hospitals, Keywords....."
+            android:textStyle="italic"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:background="@android:color/transparent"/>
 
         <ImageView
             android:id="@+id/search_img"
@@ -124,8 +128,8 @@
                 android:layout_marginStart="@dimen/_20sdp"
                 android:layout_marginEnd="@dimen/_20sdp"
                 android:lineSpacingMultiplier="1.4"
-                android:textSize="@dimen/_13ssp"
                 android:textColor="#ffffff"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 />
 
         </RelativeLayout>
@@ -210,6 +214,7 @@
         android:layout_marginBottom="@dimen/_15sdp">
 
         <LinearLayout
+            android:id="@+id/book_appointment"
             android:layout_width="0dp"
             android:layout_height="@dimen/_100sdp"
             android:layout_marginStart="@dimen/_20sdp"

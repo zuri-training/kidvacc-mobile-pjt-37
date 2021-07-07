@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config>
+        <device id="pixel_3a_xl" />
+        <device id="pixel" />
+        <device id="Nexus 5X" />
+        <device id="pixel_4_xl" />
+        <device id="pixel_3" />
+        <device id="pixel_3_xl" />
+        <device id="Nexus 6" />
+      </config>
+    </shared>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1e94dbec-3885-49d8-b594-df7a42016bba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/password-strength-meter/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/password-strength-meter/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/password-strength-meter/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/password-strength-meter/src/androidTest/java/com/ybs/passwordstrengthmeter/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/password-strength-meter/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/password-strength-meter/src/main/java/com/ybs/passwordstrengthmeter/PasswordStrength.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/password-strength-meter/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/password-strength-meter/src/test/java/com/ybs/passwordstrengthmeter/ExampleUnitTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="layoutResourceFile" />
+        <option value="resourceFile" />
+        <option value="Kotlin File" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1tx3Qt9Sz3gTNulu6JZsxj6dUW6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ResourceManagerPrefKey.ResourceType" value="DRAWABLE" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android-custom-viewC:/Users/c/AppData/Local/Android/Sdk/sources/android-30/android/widget/TextView.java_SELECTED" value="TextView" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Compressed/password-strength-checker-android-master/password-strength-checker-android-master/password-strength-meter" />
+    <property name="multi-representation-previewC:/Users/c/AppData/Local/Android/Sdk/sources/android-30/android/widget/TextView.java_selected" value="Custom views" />
+    <property name="project.structure.last.edited" value="Dependencies" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\c\AndroidStudioProjects\KidVacc\app" />
+    </key>
+    <key name="android.template.240508549">
+      <recent name="com.zuri.kidvacc_mobile_pjt_37.ui.onboarding_page" />
+      <recent name="com.zuri.kidvacc_mobile_pjt_37" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.zuri.kidvacc_mobile_pjt_37.ui.profile" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\c\AndroidStudioProjects\KidVacc\app\src\main\res\values-night" />
+      <recent name="C:\Users\c\AndroidStudioProjects\KidVacc\app\src\main\res" />
+      <recent name="C:\Users\c\AndroidStudioProjects\KidVacc\app\src\main\res\values" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="KidVacc.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1e94dbec-3885-49d8-b594-df7a42016bba" name="Default Changelist" comment="" />
+      <created>1623696899327</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1623696899327</updated>
+    </task>
+    <task id="LOCAL-00001" summary="This is the first commit of the kidvacc mobile app. No screens and no functionality yet.">
+      <created>1623700007631</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1623700007631</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added a few dependencies needed for this project. Retrofit for network requests and sdp/ssp library for getting a consistent design interface.">
+      <created>1624096503646</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1624096503646</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added The Main Activity&#10;Setup The Navigation Component&#10;Setup the Theme &#10;Designed The Home Screen, No functionality Yet">
+      <created>1624840366788</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1624840366788</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Completed The &quot;Add A Child UI&quot;&#10;Currently On The Infobase UI">
+      <created>1624853600154</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1624853600154</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Completed The Vaccine InfoBase Ui&#10;Started Design On The Vaccine Page Ui">
+      <created>1624932254266</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1624932254266</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Completed The OnBoarding Screen">
+      <created>1624939599456</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1624939599456</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Completed The OnBoarding Screen">
+      <created>1625015238760</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1625015238760</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Started Adding Functionality.&#10;Currently On The Add A Child Screen">
+      <created>1625022615838</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1625022615838</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Started Adding Functionality.&#10;Currently On The Add A Child Screen">
+      <created>1625197586271</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1625197586271</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Finished functionality for the add a child screen&#10;Added Vaccines Info the vaccine_fragment.xml file&#10;Designed the profile fragment_profile.xml screen&#10;Refined the fragment_on_boarding.xml screen">
+      <created>1625417462159</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1625417462159</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Finished functionality for the add a child screen&#10;Added Vaccines Info the vaccine_fragment.xml file&#10;Designed the profile fragment_profile.xml screen&#10;Refined the fragment_on_boarding.xml screen">
+      <created>1625418698803</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1625418698803</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Finished functionality for the add a child screen&#10;Added Vaccines Info the vaccine_fragment.xml file&#10;Designed the profile fragment_profile.xml screen&#10;Refined the fragment_on_boarding.xml screen">
+      <created>1625418873520</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1625418873520</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Finished functionality for the add a child screen&#10;Added Vaccines Info the vaccine_fragment.xml file&#10;Designed the profile fragment_profile.xml screen&#10;Refined the fragment_on_boarding.xml screen">
+      <created>1625418931191</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1625418931191</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Finished functionality for the add a child screen&#10;Added Vaccines Info the vaccine_fragment.xml file&#10;Designed the profile fragment_profile.xml screen&#10;Refined the fragment_on_boarding.xml screen">
+      <created>1625419112375</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1625419112375</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Finished linking the OnBoardingFragment.kt to the SignupFragment.kt and LoginFragment.kt&#10;Fixed bug caused by the material button causing the app to crash&#10;Removed Automatic Night mode switching(it will be handled manually)">
+      <created>1625480019263</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1625480019264</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Finished Log In(Successfully linked with API Endpoint)">
+      <created>1625576501704</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1625576501704</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Finished Sign In(Successfully linked with API Endpoint)&#10;Designed Notifications Page&#10;Designed Appointment Page">
+      <created>1625614054790</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1625614054790</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="This is the first commit of the kidvacc mobile app. No screens and no functionality yet." />
+    <MESSAGE value="Added a few dependencies needed for this project. Retrofit for network requests and sdp/ssp library for getting a consistent design interface." />
+    <MESSAGE value="Added The Main Activity&#10;Setup The Navigation Component&#10;Setup the Theme &#10;Designed The Home Screen, No functionality Yet" />
+    <MESSAGE value="Completed The &quot;Add A Child UI&quot;&#10;Currently On The Infobase UI" />
+    <MESSAGE value="Completed The Vaccine InfoBase Ui&#10;Started Design On The Vaccine Page Ui" />
+    <MESSAGE value="Completed The OnBoarding Screen" />
+    <MESSAGE value="Started Adding Functionality.&#10;Currently On The Add A Child Screen" />
+    <MESSAGE value="Finished functionality for the add a child screen&#10;Added Vaccines Info the vaccine_fragment.xml file&#10;Designed the profile fragment_profile.xml screen&#10;Refined the fragment_on_boarding.xml screen" />
+    <MESSAGE value="Finished linking the OnBoardingFragment.kt to the SignupFragment.kt and LoginFragment.kt&#10;Fixed bug caused by the material button causing the app to crash&#10;Removed Automatic Night mode switching(it will be handled manually)" />
+    <MESSAGE value="Finished Log In(Successfully linked with API Endpoint)" />
+    <MESSAGE value="Finished Sign In(Successfully linked with API Endpoint)&#10;Designed Notifications Page&#10;Designed Appointment Page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished Sign In(Successfully linked with API Endpoint)&#10;Designed Notifications Page&#10;Designed Appointment Page" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="392" y="180" width="778" height="403" key="#Gradle" timestamp="1625419790161">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="392" y="180" width="778" height="403" key="#Gradle/0.0.1366.768@0.0.1366.768" timestamp="1625419790161" />
+    <state x="200" y="130" key="#PSD" timestamp="1625589648975">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="200" y="130" key="#PSD/0.0.1366.768@0.0.1366.768" timestamp="1625589648975" />
+    <state x="392" y="0" key="#app" timestamp="1625419238109">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="392" y="0" key="#app/0.0.1366.768@0.0.1366.768" timestamp="1625419238109" />
+    <state x="474" y="99" key="#com.intellij.ide.util.MemberChooser" timestamp="1625022154648">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="474" y="99" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1625022154648" />
+    <state x="462" y="150" width="743" height="468" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1624839040539">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="462" y="150" width="743" height="468" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1624839040539" />
+    <state x="263" y="138" key="AndroidCreateResourceFileDialog" timestamp="1624937883508">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="263" y="138" key="AndroidCreateResourceFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1624937883508" />
+    <state x="527" y="173" key="AndroidCreateXmlResourceDialog" timestamp="1625610171062">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="527" y="173" key="AndroidCreateXmlResourceDialog/0.0.1366.768@0.0.1366.768" timestamp="1625610171062" />
+    <state x="56" y="0" width="955" height="736" key="CommitChangelistDialog2" timestamp="1625614039142">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="56" y="0" width="955" height="736" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1625614039142" />
+    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1625603277326">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1625603277326" />
+    <state x="462" y="272" width="470" height="205" key="Github.ShareDialog" timestamp="1623698116536">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="462" y="272" width="470" height="205" key="Github.ShareDialog/0.0.1366.768@0.0.1366.768" timestamp="1623698116536" />
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1625606288372">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1625606288372" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1625606288356">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1625606288356" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1625606288356">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1625606288356" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1625606288372">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1625606288372" />
+    <state x="314" y="145" key="MultipleFileMergeDialog" timestamp="1625418991940">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="314" y="145" key="MultipleFileMergeDialog/0.0.1366.768@0.0.1366.768" timestamp="1625418991940" />
+    <state x="468" y="104" key="RollbackChangesDialog" timestamp="1625419731409">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="468" y="104" key="RollbackChangesDialog/0.0.1366.768@0.0.1366.768" timestamp="1625419731409" />
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2" timestamp="1625614058504">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1625614058504" />
+    <state x="331" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1625537941134">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="331" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.768@0.0.1366.768" timestamp="1625537941134" />
+    <state x="492" y="297" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1625197696828">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="492" y="297" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1625197696828" />
+    <state x="375" y="172" key="git4idea.merge.GitPullDialog" timestamp="1623700183185">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="375" y="172" key="git4idea.merge.GitPullDialog/0.0.1366.768@0.0.1366.768" timestamp="1623700183185" />
+    <state x="484" y="290" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1623699763100">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="484" y="290" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1366.768@0.0.1366.768" timestamp="1623699763100" />
+    <state x="418" y="29" key="psd.add.module.dependency.panel.dimension" timestamp="1625589643866">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="418" y="29" key="psd.add.module.dependency.panel.dimension/0.0.1366.768@0.0.1366.768" timestamp="1625589643866" />
+    <state x="488" y="238" key="psd.choose.module.panel.dimension" timestamp="1625589613706">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="488" y="238" key="psd.choose.module.panel.dimension/0.0.1366.768@0.0.1366.768" timestamp="1625589613706" />
+    <state x="339" y="172" key="run.anything.popup" timestamp="1624724284989">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1624724284989" />
+    <state x="405" y="295" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1625610634359">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="405" y="295" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1366.768@0.0.1366.768" timestamp="1625610634359" />
+  </component>
+</project>
