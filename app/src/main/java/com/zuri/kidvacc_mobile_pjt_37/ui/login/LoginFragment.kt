@@ -120,7 +120,6 @@ class LoginFragment : Fragment() {
                 sharedPref?.edit()?.putBoolean("Open OnBoarding Screen", false)?.apply()
                 requireActivity().supportFragmentManager.beginTransaction().remove(this@LoginFragment).commit()
             }) { error ->
-
             val code = error.networkResponse.statusCode
             val errorString = String(error.networkResponse.data)
             if (code == 400){
