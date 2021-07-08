@@ -35,21 +35,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e94dbec-3885-49d8-b594-df7a42016bba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/book_appointment/ConfirmDetailsFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_vector__6_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_confirm_details.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/login/LoginFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/login/LoginFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/profile/ProfileFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/profile/ProfileFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/book_appointment_fragment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/book_appointment_fragment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_dashboard.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_dashboard.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1e94dbec-3885-49d8-b594-df7a42016bba" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -323,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625614431262</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added The Book Appointment UI&#10;Started Redesigning The Profile Page">
+      <created>1625729718119</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1625729718119</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -351,7 +344,8 @@
     <MESSAGE value="Finished Log In(Successfully linked with API Endpoint)" />
     <MESSAGE value="Finished Sign In(Successfully linked with API Endpoint)&#10;Designed Notifications Page&#10;Designed Appointment Page" />
     <MESSAGE value="Added Library For PasswordStrength Testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Library For PasswordStrength Testing" />
+    <MESSAGE value="Added The Book Appointment UI&#10;Started Redesigning The Profile Page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added The Book Appointment UI&#10;Started Redesigning The Profile Page" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -383,10 +377,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="527" y="173" key="AndroidCreateXmlResourceDialog/0.0.1366.768@0.0.1366.768" timestamp="1625662927641" />
-    <state x="56" y="0" width="955" height="736" key="CommitChangelistDialog2" timestamp="1625614423872">
+    <state x="56" y="0" width="955" height="736" key="CommitChangelistDialog2" timestamp="1625729705907">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="56" y="0" width="955" height="736" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1625614423872" />
+    <state x="56" y="0" width="955" height="736" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1625729705907" />
     <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1625663210402">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -419,10 +413,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="468" y="104" key="RollbackChangesDialog/0.0.1366.768@0.0.1366.768" timestamp="1625419731409" />
-    <state x="275" y="116" key="Vcs.Push.Dialog.v2" timestamp="1625614435569">
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2" timestamp="1625729818739">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1625614435569" />
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1625729818739" />
     <state x="331" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1625537941134">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

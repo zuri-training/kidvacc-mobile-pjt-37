@@ -79,7 +79,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\c\Downloads\image 1.png" />
+                                                <entry key="imagePath" value="C:\Users\c\Downloads\Group.png" />
                                                 <entry key="scalingPercent" value="50" />
                                               </map>
                                             </option>
@@ -114,8 +114,6 @@
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
                                       <entry key="backgroundColor" value="ffffff" />
-                                      <entry key="legacyIconShape" value="CIRCLE" />
-                                      <entry key="previewDensity" value="MEDIUM" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -279,11 +277,6 @@
                                           </PersistentState>
                                         </value>
                                       </entry>
-                                    </map>
-                                  </option>
-                                  <option name="values">
-                                    <map>
-                                      <entry key="previewDensity" value="MEDIUM" />
                                     </map>
                                   </option>
                                 </PersistentState>
