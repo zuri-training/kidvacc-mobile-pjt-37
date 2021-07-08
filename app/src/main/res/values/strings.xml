@@ -34,7 +34,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="get_started">Get Started</string>
     <string name="check_hospitals">Check Hospitals</string>
-    <string name="tolaniwilliams_gmail_com_2348012345678_10b_utopia_street_agege_lagos_state">tolaniwilliams@gmail.com <br/> +2348012345678 <br/>10B, Utopia Street, Agege, Lagos State</string>
+    <string name="tolaniwilliams_gmail_com_2348012345678_10b_utopia_street_agege_lagos_state">tolaniwilliams@gmail.com <br /> +2348012345678 <br />10B, Utopia Street, Agege, Lagos State</string>
     <string name="child">Child</string>
     <string name="vaccine">Vaccine</string>
     <string name="hospital">Hospital</string>
@@ -51,4 +51,17 @@
     <string name="recent">Recent</string>
     <string name="older">Older</string>
     <string name="book_appointment">BOOK APPOINTMENT</string>
+    <string name="confirm_details">CONFIRM DETAILS</string>
+    <string name="proceed_to_payment">Proceed To Payment</string>
+    <string name="child_name">Child Name</string>
+    <string name="child_date_of_birth">Child Date of Birth</string>
+    <string name="vaccine_name">Vaccine Name</string>
+    <string name="hospital_details">Hospital Details</string>
+    <string name="scheduled_date">Scheduled Date</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="address">Address</string>
+    <string name="tolani_s_little_ones">Tolani’s Little Ones</string>
+    <string name="edit">EDIT</string>
 </resources>

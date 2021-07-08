@@ -79,7 +79,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\c\Downloads\image 1.png" />
+                                                <entry key="imagePath" value="C:\Users\c\Downloads\Group.png" />
                                                 <entry key="scalingPercent" value="50" />
                                               </map>
                                             </option>
@@ -114,8 +114,6 @@
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
                                       <entry key="backgroundColor" value="ffffff" />
-                                      <entry key="legacyIconShape" value="CIRCLE" />
-                                      <entry key="previewDensity" value="MEDIUM" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -281,11 +279,6 @@
                                       </entry>
                                     </map>
                                   </option>
-                                  <option name="values">
-                                    <map>
-                                      <entry key="previewDensity" value="MEDIUM" />
-                                    </map>
-                                  </option>
                                 </PersistentState>
                               </value>
                             </entry>
@@ -325,8 +318,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="ic_undraw_baby_ja7a_1" />
-                            <entry key="sourceFile" value="C:\Users\c\Downloads\undraw_baby_ja7a 1.svg" />
+                            <entry key="outputName" value="ic_vector__6_" />
+                            <entry key="sourceFile" value="C:\Users\c\Downloads\Vector (6).svg" />
                           </map>
                         </option>
                       </PersistentState>
