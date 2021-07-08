@@ -36,14 +36,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e94dbec-3885-49d8-b594-df7a42016bba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/password-strength-meter/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/password-strength-meter/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/password-strength-meter/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/password-strength-meter/src/androidTest/java/com/ybs/passwordstrengthmeter/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/password-strength-meter/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/password-strength-meter/src/main/java/com/ybs/passwordstrengthmeter/PasswordStrength.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/password-strength-meter/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/password-strength-meter/src/test/java/com/ybs/passwordstrengthmeter/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/book_appointment/ConfirmDetailsFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_vector__6_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_confirm_details.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/login/LoginFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/login/LoginFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/profile/ProfileFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/profile/ProfileFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/book_appointment_fragment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/book_appointment_fragment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_dashboard.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_dashboard.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -311,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625614054790</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added Library For PasswordStrength Testing">
+      <created>1625614431262</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1625614431262</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -338,7 +350,8 @@
     <MESSAGE value="Finished linking the OnBoardingFragment.kt to the SignupFragment.kt and LoginFragment.kt&#10;Fixed bug caused by the material button causing the app to crash&#10;Removed Automatic Night mode switching(it will be handled manually)" />
     <MESSAGE value="Finished Log In(Successfully linked with API Endpoint)" />
     <MESSAGE value="Finished Sign In(Successfully linked with API Endpoint)&#10;Designed Notifications Page&#10;Designed Appointment Page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished Sign In(Successfully linked with API Endpoint)&#10;Designed Notifications Page&#10;Designed Appointment Page" />
+    <MESSAGE value="Added Library For PasswordStrength Testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Library For PasswordStrength Testing" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -366,38 +379,38 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="263" y="138" key="AndroidCreateResourceFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1624937883508" />
-    <state x="527" y="173" key="AndroidCreateXmlResourceDialog" timestamp="1625610171062">
+    <state x="527" y="173" key="AndroidCreateXmlResourceDialog" timestamp="1625662927641">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="527" y="173" key="AndroidCreateXmlResourceDialog/0.0.1366.768@0.0.1366.768" timestamp="1625610171062" />
-    <state x="56" y="0" width="955" height="736" key="CommitChangelistDialog2" timestamp="1625614039142">
+    <state x="527" y="173" key="AndroidCreateXmlResourceDialog/0.0.1366.768@0.0.1366.768" timestamp="1625662927641" />
+    <state x="56" y="0" width="955" height="736" key="CommitChangelistDialog2" timestamp="1625614423872">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="56" y="0" width="955" height="736" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1625614039142" />
-    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1625603277326">
+    <state x="56" y="0" width="955" height="736" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1625614423872" />
+    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1625663210402">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1625603277326" />
+    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1625663210402" />
     <state x="462" y="272" width="470" height="205" key="Github.ShareDialog" timestamp="1623698116536">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="462" y="272" width="470" height="205" key="Github.ShareDialog/0.0.1366.768@0.0.1366.768" timestamp="1623698116536" />
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1625606288372">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1625663540880">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1625606288372" />
-    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1625606288356">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1625663540880" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1625663540879">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1625606288356" />
-    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1625606288356">
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1625663540879" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1625663540878">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1625606288356" />
-    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1625606288372">
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1625663540878" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1625663540879">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1625606288372" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1625663540879" />
     <state x="314" y="145" key="MultipleFileMergeDialog" timestamp="1625418991940">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -406,10 +419,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="468" y="104" key="RollbackChangesDialog/0.0.1366.768@0.0.1366.768" timestamp="1625419731409" />
-    <state x="275" y="116" key="Vcs.Push.Dialog.v2" timestamp="1625614058504">
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2" timestamp="1625614435569">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1625614058504" />
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1625614435569" />
     <state x="331" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1625537941134">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -438,9 +451,9 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1624724284989" />
-    <state x="405" y="295" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1625610634359">
+    <state x="405" y="295" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1625658613710">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="405" y="295" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1366.768@0.0.1366.768" timestamp="1625610634359" />
+    <state x="405" y="295" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1366.768@0.0.1366.768" timestamp="1625658613710" />
   </component>
 </project>

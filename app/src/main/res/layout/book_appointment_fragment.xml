@@ -237,7 +237,8 @@
                 android:layout_marginEnd="@dimen/_20sdp"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:layout_marginBottom="@dimen/_10sdp"
-                android:text="Schedule Appointment"/>
+                android:text="Schedule Appointment"
+                android:textAllCaps="false"/>
 
         </LinearLayout>
 

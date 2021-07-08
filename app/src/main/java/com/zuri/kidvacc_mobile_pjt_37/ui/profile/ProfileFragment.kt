@@ -19,7 +19,7 @@ class ProfileFragment : Fragment() {
         viewModel = ViewModelProvider(this).get(ProfileViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_profile, container, false)
 
-        root.findViewById<Button>(R.id.edit_profile).setOnClickListener {
+        root.findViewById<Button>(R.id.add_a_child).setOnClickListener {
             val fm: FragmentManager? = requireActivity().supportFragmentManager
             val fragmentTransaction: FragmentTransaction = fm!!.beginTransaction()
             fragmentTransaction.replace(R.id.home_frameLayout, Add_A_Child())
