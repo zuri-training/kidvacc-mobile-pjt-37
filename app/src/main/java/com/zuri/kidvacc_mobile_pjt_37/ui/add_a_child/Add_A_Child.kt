@@ -38,10 +38,9 @@ class Add_A_Child : Fragment() {
 
     private fun setupSpinners(root:View){
         //HardCoded The Values Just For Now, It might change later
-        val years = arrayOf("2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011",
-            "2012","2013","2014","2015","2016","2017","2018","2019","2020","2021")
+        val years = 2000..2021
         val months = arrayOf("January","February","March","April","May","June","July","August","September","October","November","December")
-        val days = arrayOf("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31")
+        val days = 1..31
         val genders = arrayOf("Male","Female")
 
         val daySpinner = root.findViewById<AppCompatSpinner>(R.id.day_spinner)
@@ -63,7 +62,13 @@ class Add_A_Child : Fragment() {
             }
         }*/
 
-        val aYears: ArrayAdapter<String> = ArrayAdapter(requireActivity(), android.R.layout.simple_spinner_item, years)
+        var year: String?
+        val yearList = ArrayList<String>()
+        years.forEach{ y ->
+            year = y.toString()
+            year?.let { yearList.add(it) }
+        }
+        val aYears: ArrayAdapter<String> = ArrayAdapter(requireActivity(), android.R.layout.simple_spinner_item, yearList)
         aYears.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         yearSpinner.adapter = aYears
 
@@ -71,7 +76,13 @@ class Add_A_Child : Fragment() {
         aGender.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         genderSpinner.adapter = aGender
 
-        val aDay: ArrayAdapter<String> = ArrayAdapter(requireActivity(), android.R.layout.simple_spinner_item, days)
+        var day: String?
+        val dayList =  ArrayList<String>()
+        days.forEach { d ->
+            day = d.toString()
+            day?.let { dayList.add(it) }
+        }
+        val aDay: ArrayAdapter<String> = ArrayAdapter(requireActivity(), android.R.layout.simple_spinner_item, dayList)
         aDay.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         daySpinner.adapter = aDay
     }
