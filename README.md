@@ -25,6 +25,44 @@ The reason behind this app idea is that children are often given the wrong vacci
 - Infobase with commonly asked question and answers
 - Abilty to add and update children info, e.t.c.
 
+## App ScreenShots
+<table>
+  <tr>
+    <td>OnBoarding Page</td>
+  </tr>
+  <tr>
+    <td><img src="App ScreenShots/Screenshot_20210705-112437.png" width=250 height=480></td>
+    <td><img src="App ScreenShots/Screenshot_20210705-112442.png" width=250 height=480></td>
+    <td><img src="App ScreenShots/Screenshot_20210705-112447.png" width=250 height=480></td>
+  </tr>
+ </table>
+
+<table>
+  <tr>
+    <td>Sign In And Sign Up Pages</td>
+  </tr>
+  <tr>
+    <td><img src="App ScreenShots/Screenshot_20210705-112453.png" width=250 height=480></td>
+    <td><img src="App ScreenShots/Screenshot_20210705-112459.png" width=250 height=480></td>
+    <td><img src="App ScreenShots/Screenshot_20210705-112504.png" width=250 height=480></td>
+  </tr>
+ </table>
+ 
+ <table>
+  <tr>
+    <td>Home</td>
+    <td>Vaccines</td>
+    <td>InfoBase</td>
+    <td>Add A Child</td>
+  </tr>
+  <tr>
+    <td><img src="App ScreenShots/Screenshot_20210705-112509.png" width=250 height=480></td>
+    <td><img src="App ScreenShots/Screenshot_20210705-112528.png" width=250 height=480></td>
+    <td><img src="App ScreenShots/Screenshot_20210705-112542.png" width=250 height=480></td>
+    <td><img src="App ScreenShots/Screenshot_20210705-112556.png" width=250 height=480></td>
+  </tr>
+ </table>
+
 - [Additional Info](https://docs.google.com/spreadsheets/u/0/d/12XfMgeXYsXKR3ycP-vXLj7sEBXBN47oo1o5kHayHUZc/htmlview#)
 
 # Links To Design,Web Repository And Mobile Repository
@@ -89,6 +127,6 @@ Want to know more about github, here are some link to get you started:
 - [Git Cheat List](https://about.gitlab.com/images/press/git-cheat-sheet.pdf)
 
 ## Copyright & License
-Kidvacc is available under the GNU Affero General Public License v3.0. See the [LICENSE FILE](https://www.gnu.org/licenses/agpl-3.0.en.html) for more information
+Kidvacc is available under the GNU Affero General Public License v3.0. See the [LICENSE](https://www.gnu.org/licenses/agpl-3.0.en.html) for more information
 
-Copyright © 2020 Zuri Internship Training
+Copyright © 2021 Zuri Internship Training
