@@ -64,10 +64,4 @@
     <string name="address">Address</string>
     <string name="tolani_s_little_ones">Tolani’s Little Ones</string>
     <string name="edit">EDIT</string>
-    <string name="settings">SETTINGS</string>
-    <string name="log_out">Log Out</string>
-    <string name="invite_friends">Invite Friends</string>
-    <string name="faqs">FAQs</string>
-    <string name="help_and_support">Help and Support</string>
-    <string name="privacy_and_security">Privacy and Security</string>
 </resources>
