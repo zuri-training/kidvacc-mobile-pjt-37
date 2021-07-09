@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".ui.notifications.NotificationsFragment">
 
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#08517A" />
+
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
@@ -18,7 +30,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
         android:textColor="#08517A"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/back"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
