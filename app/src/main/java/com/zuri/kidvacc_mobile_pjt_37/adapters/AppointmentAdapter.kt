@@ -41,6 +41,11 @@ class AppointmentAdapter (private val dataSet: ArrayList<Appointment>) : Recycle
     
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
         val appointment = dataSet[position]
+        viewHolder.name.text = appointment.name
+        viewHolder.vaccine.text = appointment.vaccine
+        viewHolder.date_due.text = appointment.date_due
+        viewHolder.hospital.text = appointment.hospital
+        viewHolder.time.text = appointment.time
     }
     
     override fun getItemCount() = dataSet.size

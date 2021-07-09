@@ -5,10 +5,10 @@ import android.content.SharedPreferences
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.RelativeLayout
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
@@ -98,6 +98,7 @@ class LoginFragment : Fragment() {
     }
 
     private fun logIn(email: String, password: String, isChecked: Boolean, sharedPref: SharedPreferences?){
+        requireActivity().findViewById<RelativeLayout>(R.id.progressBarLayout).visibility = View.VISIBLE
         val jsonBodyAuth = JSONObject()
         jsonBodyAuth.put("username", email)
         jsonBodyAuth.put("password", password)
@@ -107,6 +108,7 @@ class LoginFragment : Fragment() {
             VolleyAuth.URL_LOGIN,
             jsonBodyAuth,
             { response ->
+                requireActivity().findViewById<RelativeLayout>(R.id.progressBarLayout).visibility = View.GONE
                 val token = response.getString("key")
                 VolleyAuth.TOKEN = token
 
@@ -120,16 +122,20 @@ class LoginFragment : Fragment() {
                 sharedPref?.edit()?.putBoolean("Open OnBoarding Screen", false)?.apply()
                 requireActivity().supportFragmentManager.beginTransaction().remove(this@LoginFragment).commit()
             }) { error ->
-            val code = error.networkResponse.statusCode
-            val errorString = String(error.networkResponse.data)
-            if (code == 400){
-                Log.i("Error Code", "" + code)
-                val jsonError = JSONObject(errorString)
-                if (jsonError.getJSONArray("non_field_errors").get(0).toString().equals("Unable to log in with provided credentials.")){
-                    Toast.makeText(requireActivity(),"Invalid Details",Toast.LENGTH_SHORT).show()
-                }else{
-                    Toast.makeText(requireActivity(),"An Error Occurred",Toast.LENGTH_SHORT).show()
+            requireActivity().findViewById<RelativeLayout>(R.id.progressBarLayout).visibility = View.GONE
+            try {
+                val code = error.networkResponse.statusCode
+                val errorString = String(error.networkResponse.data)
+                if (code == 400){
+                    val jsonError = JSONObject(errorString)
+                    if (jsonError.getJSONArray("non_field_errors").get(0).toString().equals("Unable to log in with provided credentials.")){
+                        Toast.makeText(requireActivity(),"Invalid Details",Toast.LENGTH_SHORT).show()
+                    }else{
+                        Toast.makeText(requireActivity(),"An Error Occurred",Toast.LENGTH_SHORT).show()
+                    }
                 }
+            }catch (exception:Exception){
+                Toast.makeText(requireActivity(),"An Error Occurred",Toast.LENGTH_SHORT).show()
             }
         }
         VolleySingleton.getInstance(requireActivity()).addToRequestQueue(jsonObjectRequest)

@@ -17,7 +17,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_80sdp">
+            android:layout_height="@dimen/_85sdp">
 
             <View
                 android:id="@+id/view"

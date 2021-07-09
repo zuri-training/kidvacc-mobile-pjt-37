@@ -172,7 +172,7 @@
         android:maxLines="1"
         android:ellipsize="end"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
-        android:text="@string/tolani_s_little_ones"
+        android:text="Dashboard"
         android:layout_marginTop="@dimen/_20sdp"
         app:layout_constraintStart_toStartOf="@id/shapeableImageView2"
         app:layout_constraintTop_toBottomOf="@+id/view" />
@@ -190,6 +190,359 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/add_a_child"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constrainedHeight="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_1sdp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#FCFCFC"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:strokeColor="#DA8F06"
+                app:strokeWidth="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_85sdp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Registered"
+                            android:textColor="#08517A"
+                            android:gravity="center_vertical"
+                            android:textStyle="bold"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Children"
+                            android:textColor="#08517A"
+                            android:gravity="center_vertical"
+                            android:textStyle="bold"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/three"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:src="@drawable/ic__three"
+                                android:layout_marginEnd="@dimen/_5sdp"/>
+
+                            <TextView
+                                android:id="@+id/top"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Complete"
+                                android:textColor="#08517A"
+                                android:gravity="center_vertical"
+                                android:layout_toEndOf="@id/three"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Registrations"
+                                android:textColor="#08517A"
+                                android:gravity="center_vertical"
+                                android:layout_toEndOf="@id/three"
+                                android:layout_below="@id/top"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#FCFCFC"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:strokeColor="#DA8F06"
+                app:strokeWidth="@dimen/_1sdp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Parent Score"
+                            android:textColor="#08517A"
+                            android:gravity="center_vertical"
+                            android:textStyle="bold"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/bplus"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:src="@drawable/ic_b_plus"
+                                android:layout_marginEnd="@dimen/_5sdp"/>
+
+                            <TextView
+                                android:id="@+id/top1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Complete"
+                                android:textColor="#08517A"
+                                android:gravity="center_vertical"
+                                android:layout_toEndOf="@id/bplus"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Registrations"
+                                android:textColor="#08517A"
+                                android:gravity="center_vertical"
+                                android:layout_toEndOf="@id/bplus"
+                                android:layout_below="@id/top1"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:layout_marginStart="@dimen/_1sdp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#FCFCFC"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:strokeColor="#DA8F06"
+                app:strokeWidth="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_85sdp">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_170sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Appointment"
+                            android:textColor="#08517A"
+                            android:gravity="center_vertical"
+                            android:textStyle="bold"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Records"
+                            android:textColor="#08517A"
+                            android:gravity="center_vertical"
+                            android:textStyle="bold"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/nine"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:src="@drawable/ic__three"
+                                android:layout_marginEnd="@dimen/_5sdp"/>
+
+                            <TextView
+                                android:id="@+id/top2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Appointments"
+                                android:textColor="#08517A"
+                                android:gravity="center_vertical"
+                                android:layout_toEndOf="@id/nine"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Attended"
+                                android:textColor="#08517A"
+                                android:gravity="center_vertical"
+                                android:layout_toEndOf="@id/nine"
+                                android:layout_below="@id/top2"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#FCFCFC"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:strokeColor="#DA8F06"
+                app:strokeWidth="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_170sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Settings &amp; Support"
+                            android:textColor="#08517A"
+                            android:gravity="center_vertical"
+                            android:textStyle="bold"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/settings1"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:src="@drawable/ic_vector__10_"
+                                android:layout_marginEnd="@dimen/_5sdp"/>
+
+                            <TextView
+                                android:id="@+id/top3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Check Various Support"
+                                android:textColor="#08517A"
+                                android:gravity="center_vertical"
+                                android:layout_toEndOf="@id/settings1"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="And Contact Settings"
+                                android:textColor="#08517A"
+                                android:gravity="center_vertical"
+                                android:layout_toEndOf="@id/settings1"
+                                android:layout_below="@id/top3"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
     <FrameLayout
         android:id="@+id/home_frameLayout"

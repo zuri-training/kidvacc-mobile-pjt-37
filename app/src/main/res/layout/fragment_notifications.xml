@@ -84,9 +84,9 @@
                             android:layout_marginStart="@dimen/_10sdp"/>
 
                         <LinearLayout
-                            android:layout_width="353dp"
-                            android:layout_height="53dp"
-                            android:layout_marginStart="-1dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_10sdp"
                             android:layout_marginEnd="@dimen/_5sdp"
                             android:layout_toEndOf="@id/view"
                             android:gravity="center_vertical"

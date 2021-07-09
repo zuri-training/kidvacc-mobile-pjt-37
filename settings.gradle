@@ -1,3 +1,2 @@
-include ':password-strength-meter'
 include ':app'
 rootProject.name = "KidVacc"
