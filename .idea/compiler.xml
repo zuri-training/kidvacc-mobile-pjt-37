@@ -3,7 +3,6 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.8">
       <module name="kidvacc-mobile-pjt-37.KidVacc.password-strength-meter" target="11" />
-      <module name="KidVacc.app" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
