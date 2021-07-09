@@ -67,4 +67,14 @@
     <string name="appointments">APPOINTMENTS</string>
     <string name="schedule_appointment">Schedule Appointment</string>
     <string name="book_appointment1">Book Appointment</string>
+    <string name="privacy_and_security">Privacy and Security</string>
+    <string name="settings">Settings</string>
+    <string name="help_and_support">Help and Support</string>
+    <string name="faqs">FAQs</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="log_out">Log Out</string>
+    <string name="search_hospitals">Search Hospitals</string>
+    <string name="private_hospital">Private</string>
+    <string name="public_hospital">Public</string>
+    <string name="explore">Explore</string>
 </resources>

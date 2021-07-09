@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText"
+            android:layout_width="@dimen/_167sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_toStartOf="@id/iv_search"
+            android:background="@drawable/search_background"
+            android:gravity="center_vertical"
+            android:hint="@string/search_hospitals"
+            android:maxLines="1"
+            android:paddingStart="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:singleLine="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_back" />
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:src="@drawable/ic_search"
+            app:layout_constraintBottom_toBottomOf="@+id/textInputEditText"
+            app:layout_constraintEnd_toEndOf="@+id/textInputEditText"
+            app:layout_constraintTop_toTopOf="@+id/textInputEditText" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:src="@drawable/ic_back"
+            android:tint="#08517A"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:text="@string/settings"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="#08517A"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_back"
+            app:layout_constraintStart_toEndOf="@+id/iv_back"
+            app:layout_constraintTop_toTopOf="@+id/iv_back" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_private"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/private_hospital"
+            android:textColor="#08517A"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textInputEditText"
+            app:layout_constraintStart_toStartOf="@+id/iv_back" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:alpha=".37"
+            android:background="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_private"
+            app:layout_constraintStart_toEndOf="@+id/tv_private"
+            app:layout_constraintTop_toTopOf="@+id/tv_private" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_public"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:text="@string/public_hospital"
+            android:textColor="#08517A"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/divider2"
+            app:layout_constraintStart_toEndOf="@+id/divider2"
+            app:layout_constraintTop_toTopOf="@+id/divider2" />
+
+        <fragment
+            android:id="@+id/hospital_host_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:defaultNavHost="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider2"
+            app:layout_constraintVertical_bias="0.0"
+            app:navGraph="@navigation/navigation_hospitals">
+
+        </fragment>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

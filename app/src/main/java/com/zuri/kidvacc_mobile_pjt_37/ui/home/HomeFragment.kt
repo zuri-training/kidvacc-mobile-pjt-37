@@ -16,7 +16,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.android.volley.*
+import com.android.volley.Response
 import com.android.volley.toolbox.JsonArrayRequest
 import com.zuri.kidvacc_mobile_pjt_37.R
 import com.zuri.kidvacc_mobile_pjt_37.networking.VolleyAuth
@@ -81,6 +81,7 @@ class HomeFragment : Fragment() {
             val fm: FragmentManager = requireActivity().supportFragmentManager
             val fragmentTransaction: FragmentTransaction = fm.beginTransaction()
             fragmentTransaction.replace(R.id.home_frameLayout, VaccineFragment())
+//            fragmentTransaction.replace(R.id.home_frameLayout, HospitalsFragment())
             fragmentTransaction.commit()
         }
 

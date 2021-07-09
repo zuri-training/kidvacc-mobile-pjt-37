@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_hospitals"
+    app:startDestination="@id/privateHospitalsFragment">
+
+    <fragment
+        android:id="@+id/privateHospitalsFragment"
+        android:name="com.zuri.kidvacc_mobile_pjt_37.ui.hospitals.PrivateHospitalsFragment"
+        android:label="fragment_private_hospitals"
+        tools:layout="@layout/fragment_private_hospitals" />
+    <fragment
+        android:id="@+id/publicHospitalsFragment"
+        android:name="com.zuri.kidvacc_mobile_pjt_37.ui.hospitals.PublicHospitalsFragment"
+        android:label="fragment_public_hospitals"
+        tools:layout="@layout/fragment_public_hospitals" />
+</navigation>
