@@ -13,6 +13,9 @@
       </config>
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
@@ -36,13 +39,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e94dbec-3885-49d8-b594-df7a42016bba" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/KidVacc.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/KidVacc.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,9 +68,22 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="dev" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -344,7 +354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625792915256</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Work In Progress On Appointment Page">
+      <created>1625793816741</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1625793816741</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -411,10 +428,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="527" y="173" key="AndroidCreateXmlResourceDialog/0.0.1366.768@0.0.1366.768" timestamp="1625785275225" />
-    <state x="56" y="0" width="955" height="736" key="CommitChangelistDialog2" timestamp="1625792903930">
+    <state x="56" y="0" width="955" height="736" key="CommitChangelistDialog2" timestamp="1625793812174">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="56" y="0" width="955" height="736" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1625792903930" />
+    <state x="56" y="0" width="955" height="736" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1625793812174" />
     <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1625784592149">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -423,26 +440,26 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="462" y="272" width="470" height="205" key="Github.ShareDialog/0.0.1366.768@0.0.1366.768" timestamp="1623698116536" />
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1625792434412">
+    <state width="1323" height="150" key="GridCell.Tab.0.bottom" timestamp="1625793737544">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1625792434412" />
-    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1625792434410">
+    <state width="1323" height="150" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1625793737544" />
+    <state width="1323" height="150" key="GridCell.Tab.0.center" timestamp="1625793737543">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1625792434410" />
-    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1625792434410">
+    <state width="1323" height="150" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1625793737543" />
+    <state width="1323" height="150" key="GridCell.Tab.0.left" timestamp="1625793737543">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1625792434410" />
-    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1625792434411">
+    <state width="1323" height="150" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1625793737543" />
+    <state width="1323" height="150" key="GridCell.Tab.0.right" timestamp="1625793737543">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1625792434411" />
-    <state x="129" y="58" key="MergeDialog" timestamp="1625793390031">
+    <state width="1323" height="150" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1625793737543" />
+    <state x="129" y="58" key="MergeDialog" timestamp="1625793637186">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="129" y="58" key="MergeDialog/0.0.1366.768@0.0.1366.768" timestamp="1625793390031" />
+    <state x="129" y="58" key="MergeDialog/0.0.1366.768@0.0.1366.768" timestamp="1625793637186" />
     <state x="314" y="145" key="MultipleFileMergeDialog" timestamp="1625793020712">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -451,10 +468,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="468" y="104" key="RollbackChangesDialog/0.0.1366.768@0.0.1366.768" timestamp="1625793508421" />
-    <state x="275" y="116" key="Vcs.Push.Dialog.v2" timestamp="1625793064027">
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2" timestamp="1625793835802">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1625793064027" />
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1625793835802" />
     <state x="331" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1625537941134">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -463,10 +480,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="492" y="297" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1625793539150" />
-    <state x="453" y="96" key="git4idea.branch.GitSmartOperationDialog" timestamp="1625793468321">
+    <state x="453" y="96" key="git4idea.branch.GitSmartOperationDialog" timestamp="1625793622204">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="453" y="96" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.768@0.0.1366.768" timestamp="1625793468321" />
+    <state x="453" y="96" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.768@0.0.1366.768" timestamp="1625793622204" />
     <state x="375" y="172" key="git4idea.merge.GitPullDialog" timestamp="1623700183185">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
