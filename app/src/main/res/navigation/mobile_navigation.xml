@@ -19,9 +19,9 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.zuri.kidvacc_mobile_pjt_37.ui.dashboard.DashboardFragment"
+        android:name="com.zuri.kidvacc_mobile_pjt_37.ui.dashboard.AppointmentFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_appointment" />
 
     <fragment
         android:id="@+id/navigation_profile"

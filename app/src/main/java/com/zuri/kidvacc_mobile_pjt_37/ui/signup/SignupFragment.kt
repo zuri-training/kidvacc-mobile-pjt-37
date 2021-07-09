@@ -135,25 +135,14 @@ class SignupFragment : Fragment() {
         })
     }
 
-    private fun signUp(
-        email: String,
-        username: String,
-        password: String,
-        passwordConfirm: String,
-        isChecked: Boolean,
-        sharedPref: SharedPreferences?
-    ){
+    private fun signUp(email: String, username: String, password: String, passwordConfirm: String, isChecked: Boolean, sharedPref: SharedPreferences?){
         val jsonBodyAuth = JSONObject()
         jsonBodyAuth.put("username", username)
         jsonBodyAuth.put("email", email)
         jsonBodyAuth.put("password1", password)
         jsonBodyAuth.put("password2", passwordConfirm)
 
-        val jsonObjectRequest = JsonObjectRequest(
-            Request.Method.POST,
-            VolleyAuth.URL_REGISTER,
-            jsonBodyAuth,
-            { response ->
+        val jsonObjectRequest = JsonObjectRequest(Request.Method.POST, VolleyAuth.URL_REGISTER, jsonBodyAuth, { response ->
                 //VolleyLog.wtf(response.getString("key"))
                 val token = response.getString("key")
                 VolleyAuth.TOKEN = token
