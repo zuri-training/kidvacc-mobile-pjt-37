@@ -64,4 +64,7 @@
     <string name="address">Address</string>
     <string name="tolani_s_little_ones">Tolani’s Little Ones</string>
     <string name="edit">EDIT</string>
+    <string name="appointments">APPOINTMENTS</string>
+    <string name="schedule_appointment">Schedule Appointment</string>
+    <string name="book_appointment1">Book Appointment</string>
 </resources>
