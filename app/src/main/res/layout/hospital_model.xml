@@ -36,64 +36,26 @@
                 android:layout_marginTop="@dimen/_5sdp"
                 android:layout_marginBottom="@dimen/_5sdp"
                 android:orientation="vertical"
-                android:gravity="center_vertical">
+                >
 
                 <TextView
                     android:id="@+id/name"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:text="Carol Williams"
+                    android:layout_height="wrap_content"
+                    android:text="ST. CLAIRE’S PAEDIATRICS"
                     android:textColor="#08517A"
                     android:gravity="center_vertical"
                     android:textStyle="bold"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
 
                 <TextView
-                    android:id="@+id/vaccine"
+                    android:id="@+id/address"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:text="Measles Vaccine"
+                    android:layout_height="wrap_content"
+                    android:text="2, StaffQuarters, University of Ikorodu, Ikorodu, Lagos."
                     android:textColor="#7D7B79"
                     android:gravity="center_vertical"
-                    android:maxLines="1"
-                    android:ellipsize="end"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
-
-                <TextView
-                    android:id="@+id/hospital"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:text="St. Claire’s Hospital"
-                    android:textColor="#7D7B79"
-                    android:gravity="center_vertical"
-                    android:maxLines="1"
-                    android:ellipsize="end"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
-
-                <TextView
-                    android:id="@+id/date"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:text="01 July, 2021"
-                    android:textColor="#7D7B79"
-                    android:gravity="center_vertical"
-                    android:maxLines="1"
-                    android:ellipsize="end"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
-
-                <TextView
-                    android:id="@+id/time"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:text="9:00am"
-                    android:textColor="#7D7B79"
-                    android:gravity="center_vertical"
-                    android:maxLines="1"
+                    android:maxLines="2"
                     android:ellipsize="end"
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
 
@@ -106,7 +68,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginBottom="@dimen/_5sdp"
                 android:backgroundTint="#08517A"
-                android:text="Cancel"
+                android:text="Explore"
                 android:textColor="#FFFFFF"
                 android:textSize="12sp"
                 android:textStyle="bold"

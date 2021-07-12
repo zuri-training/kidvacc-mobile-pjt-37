@@ -8,7 +8,7 @@
         android:layout_height="match_parent"
         android:background="@color/background"
         android:clickable="true"
-        android:fillViewport="true">
+        >
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -235,7 +235,7 @@
                 android:id="@+id/btn_login"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_30sdp"
                 android:text="@string/login"
                 android:textAllCaps="false"
                 android:textColor="#ffffff"
@@ -250,12 +250,11 @@
                 android:id="@+id/materialTextView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_20sdp"
                 android:layout_marginBottom="@dimen/_16sdp"
                 android:text="Not registered yet?"
                 android:textColor="@color/text_color"
                 android:textSize="@dimen/_10ssp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/createAnAccount"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintHorizontal_chainStyle="packed"

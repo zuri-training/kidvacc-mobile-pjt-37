@@ -11,6 +11,15 @@ import com.zuri.kidvacc_mobile_pjt_37.models.Appointment
 import java.util.*
 
 class AppointmentAdapter (private val dataSet: ArrayList<Appointment>) : RecyclerView.Adapter< AppointmentAdapter.ViewHolder>() {
+    private var onItemClickListener: OnItemClickListener? = null
+
+    interface OnItemClickListener {
+        fun onItemClick(view: View?, position: Int)
+    }
+
+    fun setOnItemClickListener(onItemClickListener: OnItemClickListener?) {
+        this.onItemClickListener = onItemClickListener
+    }
     
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val name: TextView
@@ -46,6 +55,10 @@ class AppointmentAdapter (private val dataSet: ArrayList<Appointment>) : Recycle
         viewHolder.date_due.text = appointment.date_due
         viewHolder.hospital.text = appointment.hospital
         viewHolder.time.text = appointment.time
+
+        viewHolder.cancel.setOnClickListener {
+            onItemClickListener?.onItemClick(it,position)
+        }
     }
     
     override fun getItemCount() = dataSet.size

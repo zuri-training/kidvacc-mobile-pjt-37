@@ -1,4 +1,4 @@
-package com.zuri.kidvacc_mobile_pjt_37.ui.models
+package com.zuri.kidvacc_mobile_pjt_37.models
 
 import android.graphics.drawable.Drawable
 

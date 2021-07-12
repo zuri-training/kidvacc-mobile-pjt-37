@@ -3,13 +3,16 @@
   <component name="AndroidLayouts">
     <shared>
       <config>
-        <device id="pixel_3a_xl" />
-        <device id="pixel" />
-        <device id="Nexus 5X" />
-        <device id="pixel_4_xl" />
-        <device id="pixel_3" />
         <device id="pixel_3_xl" />
-        <device id="Nexus 6" />
+        <device id="pixel" />
+        <device id="pixel_3a" />
+        <device id="5.1in WVGA" />
+        <device id="pixel_4_xl" />
+        <device id="Nexus 7" />
+        <device id="Nexus 7 2013" />
+        <device id="pixel_3a_xl" />
+        <device id="Nexus 5X" />
+        <device id="pixel_3" />
       </config>
     </shared>
   </component>
@@ -39,8 +42,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e94dbec-3885-49d8-b594-df7a42016bba" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/adapters/AdapterHospitalSlider.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/adapters/HospitalAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/models/Hospital.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/hospital/HospitalFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/hospital/HospitalViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic__91_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/rounded_corner_white_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout-hdpi/fragment_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout-mdpi/fragment_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/hospital_fragment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/hospital_model.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/pager_hospital_model.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/KidVacc.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/KidVacc.app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/release/app-release.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/release/app-release.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/adapters/AppointmentAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/adapters/AppointmentAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/models/Appointment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/models/Appointment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/KidVaccApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/KidVaccApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/adapters/AdapterImageSlider.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/adapters/AdapterImageSlider.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/add_a_child/Add_A_Child.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/add_a_child/Add_A_Child.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/book_appointment/BookAppointmentFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/book_appointment/BookAppointmentFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/dashboard/AppointmentFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/dashboard/AppointmentFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/dashboard/AppointmentViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/dashboard/AppointmentViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/home/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/home/HomeFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/login/LoginFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/login/LoginFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/models/Image.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/models/Image.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/notifications/NotificationsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/notifications/NotificationsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/onboarding_page/OnBoardingFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/onboarding_page/OnBoardingFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/profile/ProfileFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/profile/ProfileFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/signup/SignupFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zuri/kidvacc_mobile_pjt_37/ui/signup/SignupFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/add__a__child_fragment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/add__a__child_fragment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/appointment_model.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/appointment_model.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/book_appointment_fragment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/book_appointment_fragment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_appointment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_appointment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_notifications.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_notifications.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_on_boarding.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_on_boarding.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_signup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_signup.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/vaccine_fragment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/vaccine_fragment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +105,7 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[192.168.43.203:5555]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -59,12 +114,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="resourceFile" />
         <option value="Kotlin File" />
         <option value="Interface" />
+        <option value="resourceFile" />
+        <option value="layoutResourceFile" />
         <option value="Class" />
         <option value="Kotlin Class" />
-        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
@@ -117,33 +172,37 @@
     <property name="android-custom-viewC:/Users/c/AppData/Local/Android/Sdk/sources/android-30/android/widget/TextView.java_SELECTED" value="TextView" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Compressed/password-strength-checker-android-master/password-strength-checker-android-master/password-strength-meter" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout-mdpi" />
     <property name="multi-representation-previewC:/Users/c/AppData/Local/Android/Sdk/sources/android-30/android/widget/TextView.java_selected" value="Custom views" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\c\AndroidStudioProjects\KidVacc\app\src\main\res\values-night" />
-      <recent name="C:\Users\c\AndroidStudioProjects\KidVacc\app\src\main\res" />
-      <recent name="C:\Users\c\AndroidStudioProjects\KidVacc\app\src\main\res\values" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\c\AndroidStudioProjects\KidVacc\app" />
     </key>
     <key name="android.template.240508549">
       <recent name="com.zuri.kidvacc_mobile_pjt_37.ui.onboarding_page" />
       <recent name="com.zuri.kidvacc_mobile_pjt_37" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.zuri.kidvacc_mobile_pjt_37.ui.hospital" />
+      <recent name="com.zuri.kidvacc_mobile_pjt_37.models" />
+      <recent name="com.zuri.kidvacc_mobile_pjt_37.adapters" />
       <recent name="com.zuri.kidvacc_mobile_pjt_37.ui.settings" />
       <recent name="com.zuri.kidvacc_mobile_pjt_37.ui.profile" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.zuri.kidvacc_mobile_pjt_37" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\c\AndroidStudioProjects\KidVacc\app" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\c\AndroidStudioProjects\KidVacc\app\src\main\res\layout-mdpi" />
+      <recent name="C:\Users\c\AndroidStudioProjects\KidVacc\app\src\main\res\values-night" />
+      <recent name="C:\Users\c\AndroidStudioProjects\KidVacc\app\src\main\res" />
+      <recent name="C:\Users\c\AndroidStudioProjects\KidVacc\app\src\main\res\values" />
     </key>
   </component>
   <component name="RunManager">
@@ -398,7 +457,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625824332524</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Updated .gitignore file">
+      <created>1625838418549</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1625838418549</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -431,7 +497,8 @@
     <MESSAGE value="Work In Progress On Appointment Page" />
     <MESSAGE value="Integrated The Child List API&#10;Designed And Implemented The Appointments Page&#10;Re-designed the profile page" />
     <MESSAGE value="Updated the designs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the designs" />
+    <MESSAGE value="Updated .gitignore file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated .gitignore file" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -443,58 +510,62 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="200" y="130" key="#PSD/0.0.1366.768@0.0.1366.768" timestamp="1625813442924" />
-    <state x="392" y="0" key="#app" timestamp="1625811272156">
+    <state x="392" y="0" key="#app" timestamp="1625839916232">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="392" y="0" key="#app/0.0.1366.768@0.0.1366.768" timestamp="1625811272156" />
-    <state x="474" y="99" key="#com.intellij.ide.util.MemberChooser" timestamp="1625788146055">
+    <state x="392" y="0" key="#app/0.0.1366.768@0.0.1366.768" timestamp="1625839916232" />
+    <state x="474" y="99" key="#com.intellij.ide.util.MemberChooser" timestamp="1626049996191">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="474" y="99" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1625788146055" />
+    <state x="474" y="99" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1626049996191" />
     <state x="238" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1625789688321">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="238" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.768@0.0.1366.768" timestamp="1625789688321" />
-    <state x="462" y="150" width="743" height="468" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1625794437455">
+    <state x="462" y="150" width="743" height="468" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1626015404996">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="462" y="150" width="743" height="468" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1625794437455" />
-    <state x="263" y="138" key="AndroidCreateResourceFileDialog" timestamp="1625820947495">
+    <state x="462" y="150" width="743" height="468" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1626015404996" />
+    <state x="263" y="138" key="AndroidCreateResourceDirectoryDialog" timestamp="1625840272955">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="263" y="138" key="AndroidCreateResourceFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1625820947495" />
-    <state x="527" y="173" key="AndroidCreateXmlResourceDialog" timestamp="1625794559300">
+    <state x="263" y="138" key="AndroidCreateResourceDirectoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1625840272955" />
+    <state x="263" y="138" key="AndroidCreateResourceFileDialog" timestamp="1626016534939">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="527" y="173" key="AndroidCreateXmlResourceDialog/0.0.1366.768@0.0.1366.768" timestamp="1625794559300" />
-    <state x="56" y="0" width="955" height="736" key="CommitChangelistDialog2" timestamp="1625824324834">
+    <state x="263" y="138" key="AndroidCreateResourceFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1626016534939" />
+    <state x="527" y="173" key="AndroidCreateXmlResourceDialog" timestamp="1626015495085">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="56" y="0" width="955" height="736" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1625824324834" />
-    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1625811859784">
+    <state x="527" y="173" key="AndroidCreateXmlResourceDialog/0.0.1366.768@0.0.1366.768" timestamp="1626015495085" />
+    <state x="56" y="0" width="955" height="736" key="CommitChangelistDialog2" timestamp="1625838415777">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1625811859784" />
+    <state x="56" y="0" width="955" height="736" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1625838415777" />
+    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1626052722016">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1626052722016" />
     <state x="462" y="272" width="470" height="205" key="Github.ShareDialog" timestamp="1623698116536">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="462" y="272" width="470" height="205" key="Github.ShareDialog/0.0.1366.768@0.0.1366.768" timestamp="1623698116536" />
-    <state width="661" height="192" key="GridCell.Tab.0.bottom" timestamp="1625811466641">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1626049077148">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="661" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1625811466641" />
-    <state width="661" height="192" key="GridCell.Tab.0.center" timestamp="1625811466640">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1626049077148" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1626049077147">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="661" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1625811466640" />
-    <state width="661" height="192" key="GridCell.Tab.0.left" timestamp="1625811466639">
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1626049077147" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1626049077147">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="661" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1625811466639" />
-    <state width="661" height="192" key="GridCell.Tab.0.right" timestamp="1625811466641">
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1626049077147" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1626049077148">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="661" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1625811466641" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1626049077148" />
     <state x="129" y="58" key="MergeDialog" timestamp="1625793637186">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -507,14 +578,18 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="468" y="104" key="RollbackChangesDialog/0.0.1366.768@0.0.1366.768" timestamp="1625793508421" />
-    <state x="275" y="116" key="Vcs.Push.Dialog.v2" timestamp="1625824336582">
+    <state x="184" y="28" key="SettingsEditor" timestamp="1626053148334">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1625824336582" />
-    <state x="331" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1625537941134">
+    <state x="184" y="28" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1626053148334" />
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2" timestamp="1625838423594">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="331" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.768@0.0.1366.768" timestamp="1625537941134" />
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1625838423594" />
+    <state x="331" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1626050568885">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="331" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.768@0.0.1366.768" timestamp="1626050568885" />
     <state x="492" y="297" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1625793539150">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

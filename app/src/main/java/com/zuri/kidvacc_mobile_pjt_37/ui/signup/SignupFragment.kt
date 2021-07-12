@@ -1,5 +1,6 @@
 package com.zuri.kidvacc_mobile_pjt_37.ui.signup
 
+import android.app.ProgressDialog
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
@@ -17,6 +18,7 @@ import com.android.volley.toolbox.JsonObjectRequest
 import com.google.android.material.checkbox.MaterialCheckBox
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
+import com.ybs.passwordstrengthmeter.PasswordStrength
 import com.zuri.kidvacc_mobile_pjt_37.R
 import com.zuri.kidvacc_mobile_pjt_37.databinding.FragmentSignupBinding
 import com.zuri.kidvacc_mobile_pjt_37.networking.VolleyAuth
@@ -38,7 +40,7 @@ class SignupFragment : Fragment() {
             Context.MODE_PRIVATE
         )
         val binding = FragmentSignupBinding.inflate(inflater)
-        var checkboxRememberMe: MaterialCheckBox = binding.checkBoxRememberMe
+        val checkboxRememberMe: MaterialCheckBox = binding.checkBoxRememberMe
 
         val etUsername: TextInputLayout = binding.etFullNameLayout
         val usernameTextView:TextInputEditText = binding.etFullName
@@ -63,12 +65,13 @@ class SignupFragment : Fragment() {
             val password2 = confirmPasswordTextView.text.toString()
 
             if (!(username.isBlank() || password.isEmpty() || password2.isEmpty())){
-                val strength: String = calculateStrength(password)
+                val str = PasswordStrength.calculateStrength(password)
+                val strength: String = str.getText(requireActivity()) as String
 
-                if (strength.equals("Weak")) {
+                if (strength == "Weak") {
                     etPasswordLayout.error = "Password Is Too Weak"
                 }
-                else if (strength.equals("Medium")) {
+                else if (strength == "Medium") {
                    if (password.equals(password2)){
                        signUp(
                            email,
@@ -82,7 +85,7 @@ class SignupFragment : Fragment() {
                        etConfirmPasswordLayout.error = "Passwords Do Not Match"
                    }
                 }
-                else if (strength.equals("Strong")) {
+                else if (strength == "Strong") {
                     if (password.equals(password2)){
                         signUp(
                             email,
@@ -165,6 +168,11 @@ class SignupFragment : Fragment() {
         isChecked: Boolean,
         sharedPref: SharedPreferences?
     ){
+        val progressDialog = ProgressDialog(requireActivity())
+        progressDialog.setTitle("Please Wait")
+        progressDialog.setMessage("Logging You In")
+        progressDialog.show()
+
         val jsonBodyAuth = JSONObject()
         jsonBodyAuth.put("username", username)
         jsonBodyAuth.put("email", email)
@@ -176,7 +184,7 @@ class SignupFragment : Fragment() {
             VolleyAuth.URL_REGISTER,
             jsonBodyAuth,
             { response ->
-                //VolleyLog.wtf(response.getString("key"))
+                progressDialog.dismiss()
                 val token = response.getString("key")
                 VolleyAuth.TOKEN = token
                 if (isChecked) {
@@ -189,6 +197,7 @@ class SignupFragment : Fragment() {
                 requireActivity().supportFragmentManager.beginTransaction()
                     .remove(this@SignupFragment).commit()
             }) { error ->
+            progressDialog.dismiss()
             try {
                 val code = error.networkResponse.statusCode
                 val errorString = String(error.networkResponse.data)
@@ -206,62 +215,5 @@ class SignupFragment : Fragment() {
             error.printStackTrace()
         }
         VolleySingleton.getInstance(requireActivity()).addToRequestQueue(jsonObjectRequest)
-    }
-
-    var REQUIRED_LENGTH = 8
-    var MAXIMUM_LENGTH = 15
-    var REQUIRE_SPECIAL_CHARACTERS = true
-    var REQUIRE_DIGITS = true
-    var REQUIRE_LOWER_CASE = true
-    var REQUIRE_UPPER_CASE = false
-
-    fun calculateStrength(password: String): String {
-        var currentScore = 0
-        var sawUpper = false
-        var sawLower = false
-        var sawDigit = false
-        var sawSpecial = false
-        for (element in password) {
-            val c = element
-            if (!sawSpecial && !Character.isLetterOrDigit(c)) {
-                currentScore += 1
-                sawSpecial = true
-            } else {
-                if (!sawDigit && Character.isDigit(c)) {
-                    currentScore += 1
-                    sawDigit = true
-                } else {
-                    if (!sawUpper || !sawLower) {
-                        if (Character.isUpperCase(c)) sawUpper = true else sawLower = true
-                        if (sawUpper && sawLower) currentScore += 1
-                    }
-                }
-            }
-        }
-        if (password.length > REQUIRED_LENGTH) {
-            if (REQUIRE_SPECIAL_CHARACTERS && !sawSpecial
-                || REQUIRE_UPPER_CASE && !sawUpper
-                || REQUIRE_LOWER_CASE && !sawLower
-                || REQUIRE_DIGITS && !sawDigit
-            ) {
-                currentScore = 1
-            } else {
-                currentScore = 2
-                if (password.length > MAXIMUM_LENGTH) {
-                    currentScore = 3
-                }
-            }
-        } else {
-            currentScore = 0
-        }
-        when (currentScore) {
-            0 -> return "WEAK"
-            1 -> return "MEDIUM"
-            2 -> return "STRONG"
-            3 -> return "VERY_STRONG"
-            else -> {
-            }
-        }
-        return "VERY_STRONG"
     }
 }

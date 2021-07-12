@@ -1,4 +1,4 @@
-package com.zuri.kidvacc_mobile_pjt_37.ui.adapters
+package com.zuri.kidvacc_mobile_pjt_37.adapters
 
 import android.app.Activity
 import android.content.Context
@@ -11,7 +11,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
 import com.zuri.kidvacc_mobile_pjt_37.R
-import com.zuri.kidvacc_mobile_pjt_37.ui.models.Image
+import com.zuri.kidvacc_mobile_pjt_37.models.Image
 
 public class AdapterImageSlider(private val act: Activity, items: List<Image>) : PagerAdapter() {
     private var items: List<Image>

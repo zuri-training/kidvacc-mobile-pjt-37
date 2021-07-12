@@ -15,8 +15,8 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import androidx.viewpager.widget.ViewPager
 import com.zuri.kidvacc_mobile_pjt_37.R
-import com.zuri.kidvacc_mobile_pjt_37.ui.adapters.AdapterImageSlider
-import com.zuri.kidvacc_mobile_pjt_37.ui.models.Image
+import com.zuri.kidvacc_mobile_pjt_37.adapters.AdapterImageSlider
+import com.zuri.kidvacc_mobile_pjt_37.models.Image
 import com.zuri.kidvacc_mobile_pjt_37.ui.signup.SignUpPage
 import java.util.*
 

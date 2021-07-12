@@ -12,9 +12,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_20sdp"
-        android:layout_marginBottom="@dimen/_10sdp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintBottom_toBottomOf="@+id/shapeableImageView3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -42,15 +41,14 @@
     </LinearLayout>
 
     <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView3"
         android:layout_width="@dimen/_40sdp"
         android:layout_height="@dimen/_40sdp"
-        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        android:layout_marginEnd="@dimen/_20sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
-        app:srcCompat="@drawable/dr_patty_black_woman_entrepreneur_1"
-        android:layout_marginEnd="@dimen/_20sdp"
-        android:layout_marginBottom="@dimen/_10sdp"/>
+        app:srcCompat="@drawable/dr_patty_black_woman_entrepreneur_1" />
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
@@ -58,25 +56,24 @@
         android:layout_height="@dimen/_35sdp"
         android:layout_marginStart="@dimen/_20sdp"
         android:layout_marginEnd="@dimen/_20sdp"
-        android:layout_marginBottom="@dimen/_30sdp"
         android:background="@drawable/search_background"
         app:layout_constraintBottom_toTopOf="@+id/materialCardView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        >
+        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView3">
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_toStartOf="@id/search_img"
+            android:background="@android:color/transparent"
             android:gravity="center_vertical"
             android:hint="Search Vaccines, Hospitals, Keywords....."
-            android:textStyle="italic"
             android:maxLines="1"
             android:singleLine="true"
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
-            android:background="@android:color/transparent"/>
+            android:textStyle="italic" />
 
         <ImageView
             android:id="@+id/search_img"

@@ -1,5 +1,6 @@
 package com.zuri.kidvacc_mobile_pjt_37.ui.login
 
+import android.app.ProgressDialog
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
@@ -8,7 +9,6 @@ import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.RelativeLayout
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
@@ -18,6 +18,7 @@ import com.android.volley.toolbox.JsonObjectRequest
 import com.google.android.material.checkbox.MaterialCheckBox
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
+import com.shashank.sony.fancytoastlib.FancyToast
 import com.zuri.kidvacc_mobile_pjt_37.R
 import com.zuri.kidvacc_mobile_pjt_37.databinding.FragmentLoginBinding
 import com.zuri.kidvacc_mobile_pjt_37.networking.VolleyAuth
@@ -98,7 +99,13 @@ class LoginFragment : Fragment() {
     }
 
     private fun logIn(email: String, password: String, isChecked: Boolean, sharedPref: SharedPreferences?){
-        requireActivity().findViewById<RelativeLayout>(R.id.progressBarLayout).visibility = View.VISIBLE
+        val progressDialog = ProgressDialog(requireActivity())
+        progressDialog.setTitle("Please Wait")
+        progressDialog.setMessage("Logging You In")
+        progressDialog.setCancelable(false)
+        progressDialog.setCanceledOnTouchOutside(false)
+        progressDialog.show()
+
         val jsonBodyAuth = JSONObject()
         jsonBodyAuth.put("username", email)
         jsonBodyAuth.put("password", password)
@@ -108,7 +115,7 @@ class LoginFragment : Fragment() {
             VolleyAuth.URL_LOGIN,
             jsonBodyAuth,
             { response ->
-                requireActivity().findViewById<RelativeLayout>(R.id.progressBarLayout).visibility = View.GONE
+                progressDialog.dismiss()
                 val token = response.getString("key")
                 VolleyAuth.TOKEN = token
 
@@ -119,19 +126,21 @@ class LoginFragment : Fragment() {
                     sharedPref?.edit()?.putString("TOKEN", "")?.apply()
                 }
 
+                FancyToast.makeText(requireActivity(),"Logged In!",FancyToast.LENGTH_SHORT,FancyToast.SUCCESS,false).show();
+
                 sharedPref?.edit()?.putBoolean("Open OnBoarding Screen", false)?.apply()
                 requireActivity().supportFragmentManager.beginTransaction().remove(this@LoginFragment).commit()
             }) { error ->
-            requireActivity().findViewById<RelativeLayout>(R.id.progressBarLayout).visibility = View.GONE
+            progressDialog.dismiss()
             try {
                 val code = error.networkResponse.statusCode
                 val errorString = String(error.networkResponse.data)
                 if (code == 400){
                     val jsonError = JSONObject(errorString)
                     if (jsonError.getJSONArray("non_field_errors").get(0).toString().equals("Unable to log in with provided credentials.")){
-                        Toast.makeText(requireActivity(),"Invalid Details",Toast.LENGTH_SHORT).show()
+                        FancyToast.makeText(requireActivity(),"Invalid Details",FancyToast.LENGTH_SHORT,FancyToast.ERROR,false).show();
                     }else{
-                        Toast.makeText(requireActivity(),"An Error Occurred",Toast.LENGTH_SHORT).show()
+                        FancyToast.makeText(requireActivity(),"An Error Occurred",FancyToast.LENGTH_SHORT,FancyToast.ERROR,false).show();
                     }
                 }
             }catch (exception:Exception){

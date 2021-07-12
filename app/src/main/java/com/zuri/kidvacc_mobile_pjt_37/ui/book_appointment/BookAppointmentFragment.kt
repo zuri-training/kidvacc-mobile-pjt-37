@@ -1,5 +1,6 @@
 package com.zuri.kidvacc_mobile_pjt_37.ui.book_appointment
 
+import android.app.ProgressDialog
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -62,16 +63,25 @@ class BookAppointmentFragment : Fragment() {
         }
 
         root.findViewById<MaterialButton>(R.id.schedule_appointment).setOnClickListener {
-            val addAppointment: MutableLiveData<Appointment> = appointmentViewModel.addAppointment
-            val appointment:Appointment = Appointment()
+           // val addAppointment: MutableLiveData<Appointment> = appointmentViewModel.addAppointment
+            val addAppointmentList: MutableLiveData<java.util.ArrayList<Appointment>> = appointmentViewModel.addAppointmentList
+            val appointment = Appointment()
+
+            var appointmentList:java.util.ArrayList<Appointment> = java.util.ArrayList<Appointment>()
+            if (addAppointmentList.value != null){
+                appointmentList = addAppointmentList.value!!
+            }
 
             appointment.name = root.findViewById<AutoCompleteTextView>(R.id.name).text.toString()
             appointment.vaccine = root.findViewById<AutoCompleteTextView>(R.id.vaccines).text.toString()
             appointment.time = "10:20 AM"
             appointment.hospital = root.findViewById<AutoCompleteTextView>(R.id.hospital).text.toString()
             appointment.date_due = "2021-09-10"
+            appointment.id = System.currentTimeMillis()
 
-            addAppointment.postValue(appointment)
+            appointmentList.add(appointment)
+            addAppointmentList.postValue(appointmentList)
+            //addAppointment.postValue(appointment)
 
             requireActivity().supportFragmentManager.beginTransaction().remove(this@BookAppointmentFragment).commit();
         }
@@ -81,27 +91,34 @@ class BookAppointmentFragment : Fragment() {
     }
 
     private fun getChild(root:View){
-        requireActivity().findViewById<RelativeLayout>(R.id.progressBarLayout).visibility = View.VISIBLE
+        val progressDialog = ProgressDialog(requireActivity())
+        progressDialog.setTitle("Please Wait")
+        progressDialog.setMessage("Getting Details")
+        progressDialog.setCancelable(false)
+        progressDialog.setCanceledOnTouchOutside(false)
+        progressDialog.show()
+
         val jsonArrayRequest: JsonArrayRequest = object : JsonArrayRequest(
             Method.GET, VolleyAuth.URL_CHILD_LIST, null,
             Response.Listener { response ->
+                progressDialog.dismiss()
                 requireActivity().findViewById<RelativeLayout>(R.id.progressBarLayout).visibility = View.GONE
                 Log.i("response",response.toString())
                 for (i in 0 until response.length()){
                     val jsonObject = response.getJSONObject(i)
                     val firstName = jsonObject.getString("First_name")
                     val middleName = jsonObject.getString("Middle_name")
-                    val lastName = jsonObject.getString("Middle_name")
+                    val lastName = jsonObject.getString("Last_name")
 
-                    childList.add("$firstName $middleName")
+                    childList.add("$firstName $lastName")
                     childAdapter.notifyDataSetChanged()
                    // root.findViewById<AutoCompleteTextView>(R.id.name).setAdapter(childAdapter);
                 }},
             Response.ErrorListener { error -> error.printStackTrace()
-                requireActivity().findViewById<RelativeLayout>(R.id.progressBarLayout).visibility = View.GONE}) {
+                progressDialog.dismiss()}) {
             override fun getHeaders(): Map<String, String> {
                 val headers: HashMap<String, String> = HashMap<String, String>()
-                headers.put("Authorization", "Token "+ VolleyAuth.TOKEN)
+                headers["Authorization"] = "Token "+ VolleyAuth.TOKEN
                 return headers
             }
         }
