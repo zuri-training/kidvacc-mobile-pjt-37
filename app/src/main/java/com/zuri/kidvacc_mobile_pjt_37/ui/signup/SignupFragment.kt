@@ -1,5 +1,6 @@
 package com.zuri.kidvacc_mobile_pjt_37.ui.signup
 
+import android.app.ProgressDialog
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
@@ -8,6 +9,7 @@ import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
@@ -38,7 +40,7 @@ class SignupFragment : Fragment() {
             Context.MODE_PRIVATE
         )
         val binding = FragmentSignupBinding.inflate(inflater)
-        var checkboxRememberMe: MaterialCheckBox = binding.checkBoxRememberMe
+        val checkboxRememberMe: MaterialCheckBox = binding.checkBoxRememberMe
 
         val etUsername: TextInputLayout = binding.etFullNameLayout
         val usernameTextView:TextInputEditText = binding.etFullName
@@ -63,28 +65,50 @@ class SignupFragment : Fragment() {
             val password2 = confirmPasswordTextView.text.toString()
 
             if (!(username.isBlank() || password.isEmpty() || password2.isEmpty())){
-                val strength: PasswordStrength = PasswordStrength.calculateStrength(password)
+                val str = PasswordStrength.calculateStrength(password)
+                val strength: String = str.getText(requireActivity()) as String
 
-                if (strength.getText(requireActivity()).equals("Weak")) {
+                if (strength == "Weak") {
                     etPasswordLayout.error = "Password Is Too Weak"
                 }
-                else if (strength.getText(requireActivity()).equals("Medium")) {
+                else if (strength == "Medium") {
                    if (password.equals(password2)){
-                       signUp(email,username,password,password2,checkboxRememberMe.isChecked,sharedPref)
+                       signUp(
+                           email,
+                           username,
+                           password,
+                           password2,
+                           checkboxRememberMe.isChecked,
+                           sharedPref
+                       )
                    }else{
                        etConfirmPasswordLayout.error = "Passwords Do Not Match"
                    }
                 }
-                else if (strength.getText(requireActivity()).equals("Strong")) {
+                else if (strength == "Strong") {
                     if (password.equals(password2)){
-                        signUp(email,username,password,password2,checkboxRememberMe.isChecked,sharedPref)
+                        signUp(
+                            email,
+                            username,
+                            password,
+                            password2,
+                            checkboxRememberMe.isChecked,
+                            sharedPref
+                        )
                     }else{
                         etConfirmPasswordLayout.error = "Passwords Do Not Match"
                     }
                 }
                 else {
                     if (password.equals(password2)){
-                        signUp(email,username,password,password2,checkboxRememberMe.isChecked,sharedPref)
+                        signUp(
+                            email,
+                            username,
+                            password,
+                            password2,
+                            checkboxRememberMe.isChecked,
+                            sharedPref
+                        )
                     }else{
                         etConfirmPasswordLayout.error = "Passwords Do Not Match"
                     }
@@ -120,7 +144,8 @@ class SignupFragment : Fragment() {
         fragmentTransaction.commit()
     }
 
-    private fun addTextListener(etTextInputEditText: TextInputEditText, etTextInputLayout: TextInputLayout
+    private fun addTextListener(
+        etTextInputEditText: TextInputEditText, etTextInputLayout: TextInputLayout
     ){
         etTextInputEditText.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable?) {
@@ -135,27 +160,58 @@ class SignupFragment : Fragment() {
         })
     }
 
-    private fun signUp(email: String, username: String, password: String, passwordConfirm: String, isChecked: Boolean, sharedPref: SharedPreferences?){
+    private fun signUp(
+        email: String,
+        username: String,
+        password: String,
+        passwordConfirm: String,
+        isChecked: Boolean,
+        sharedPref: SharedPreferences?
+    ){
+        val progressDialog = ProgressDialog(requireActivity())
+        progressDialog.setTitle("Please Wait")
+        progressDialog.setMessage("Logging You In")
+        progressDialog.show()
+
         val jsonBodyAuth = JSONObject()
         jsonBodyAuth.put("username", username)
         jsonBodyAuth.put("email", email)
         jsonBodyAuth.put("password1", password)
         jsonBodyAuth.put("password2", passwordConfirm)
 
-        val jsonObjectRequest = JsonObjectRequest(Request.Method.POST, VolleyAuth.URL_REGISTER, jsonBodyAuth, { response ->
-                //VolleyLog.wtf(response.getString("key"))
+        val jsonObjectRequest = JsonObjectRequest(
+            Request.Method.POST,
+            VolleyAuth.URL_REGISTER,
+            jsonBodyAuth,
+            { response ->
+                progressDialog.dismiss()
                 val token = response.getString("key")
                 VolleyAuth.TOKEN = token
                 if (isChecked) {
                     sharedPref?.edit()?.putBoolean("Open SignUp Screen", false)?.apply()
                     sharedPref?.edit()?.putString("TOKEN", token)?.apply()
-                }else{
+                } else {
                     sharedPref?.edit()?.putString("TOKEN", "")?.apply()
                 }
                 sharedPref?.edit()?.putBoolean("Open OnBoarding Screen", false)?.apply()
-                requireActivity().supportFragmentManager.beginTransaction().remove(this@SignupFragment).commit()
+                requireActivity().supportFragmentManager.beginTransaction()
+                    .remove(this@SignupFragment).commit()
             }) { error ->
-            //val code = error.networkResponse.statusCode
+            progressDialog.dismiss()
+            try {
+                val code = error.networkResponse.statusCode
+                val errorString = String(error.networkResponse.data)
+                if (code == 400){
+                    val jsonError = JSONObject(errorString)
+                    if (jsonError.getJSONArray("non_field_errors").get(0).toString().equals("Unable to log in with provided credentials.")){
+                        Toast.makeText(requireActivity(), "Invalid Details", Toast.LENGTH_SHORT).show()
+                    }else{
+                        Toast.makeText(requireActivity(), "An Error Occurred", Toast.LENGTH_SHORT).show()
+                    }
+                }
+            }catch (exception: Exception){
+                Toast.makeText(requireActivity(), "An Error Occurred", Toast.LENGTH_SHORT).show()
+            }
             error.printStackTrace()
         }
         VolleySingleton.getInstance(requireActivity()).addToRequestQueue(jsonObjectRequest)

@@ -12,6 +12,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:src="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="#08517A" />
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
@@ -22,8 +34,9 @@
             android:gravity="center_vertical"
             android:text="@string/infobase_caps"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-            android:textColor="#DA8F06"
+            android:textColor="#08517A"
             android:textStyle="bold"
+            android:layout_toEndOf="@id/back"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -547,7 +560,7 @@
                         android:layout_gravity="end"
                         android:layout_marginEnd="@dimen/_20sdp"
                         android:layout_marginBottom="@dimen/_8sdp"
-                        android:backgroundTint="#DA8F06"
+                        android:backgroundTint="#08517A"
                         android:text="@string/submit"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold"

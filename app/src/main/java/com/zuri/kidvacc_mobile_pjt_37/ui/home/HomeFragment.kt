@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.text.Spannable
 import android.text.SpannableStringBuilder
 import android.text.style.StyleSpan
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,17 +15,14 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.android.volley.*
-import com.android.volley.toolbox.JsonArrayRequest
 import com.zuri.kidvacc_mobile_pjt_37.R
 import com.zuri.kidvacc_mobile_pjt_37.networking.VolleyAuth
-import com.zuri.kidvacc_mobile_pjt_37.networking.VolleySingleton
 import com.zuri.kidvacc_mobile_pjt_37.ui.book_appointment.BookAppointmentFragment
+import com.zuri.kidvacc_mobile_pjt_37.ui.hospital.HospitalFragment
 import com.zuri.kidvacc_mobile_pjt_37.ui.infobase.Info_Base_Fragment
 import com.zuri.kidvacc_mobile_pjt_37.ui.onboarding_page.OnBoardingFragment
 import com.zuri.kidvacc_mobile_pjt_37.ui.signup.SignUpPage
 import com.zuri.kidvacc_mobile_pjt_37.ui.vaccines.VaccineFragment
-import java.util.*
 
 
 class HomeFragment : Fragment() {
@@ -84,6 +80,13 @@ class HomeFragment : Fragment() {
             fragmentTransaction.commit()
         }
 
+        root.findViewById<View>(R.id.hospitals).setOnClickListener {
+            val fm: FragmentManager = requireActivity().supportFragmentManager
+            val fragmentTransaction: FragmentTransaction = fm.beginTransaction()
+            fragmentTransaction.replace(R.id.home_frameLayout, HospitalFragment())
+            fragmentTransaction.commit()
+        }
+
         root.findViewById<View>(R.id.book_appointment).setOnClickListener {
             val fm: FragmentManager = requireActivity().supportFragmentManager
             val fragmentTransaction: FragmentTransaction = fm.beginTransaction()
@@ -115,17 +118,4 @@ class HomeFragment : Fragment() {
         fragmentTransaction.commit()
     }
 
-    private fun getChild(){
-        val jsonArrayRequest: JsonArrayRequest = object : JsonArrayRequest(Method.GET, VolleyAuth.URL_PAYMENTS, null,
-            Response.Listener { response -> Log.i("Response", response.toString()) },
-            Response.ErrorListener { error -> error.printStackTrace() }) {
-            override fun getHeaders(): Map<String, String> {
-                val headers: HashMap<String, String> = HashMap<String, String>()
-                headers.put("Authorization", "Token 7d87e7bef6592867b9e1a3d1210d476f17d2d361")
-                return headers
-            }
-        }
-
-        VolleySingleton.getInstance(requireActivity()).addToRequestQueue(jsonArrayRequest)
-    }
 }

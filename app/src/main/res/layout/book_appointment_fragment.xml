@@ -14,7 +14,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginStart="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_10sdp"
         android:orientation="horizontal">
 
         <ImageButton
@@ -75,6 +74,7 @@
                 app:hintEnabled="false">
 
                 <AutoCompleteTextView
+                    android:id="@+id/name"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_35sdp"
                     android:layout_marginTop="@dimen/_8sdp"
@@ -83,7 +83,7 @@
                     android:gravity="center_vertical"
                     android:inputType="none"
                     android:hint="Select Child"
-                    android:textColor="#989D9F"
+                    
                     android:textStyle="italic"
                     android:textSize="@dimen/_12ssp"
                     />
@@ -103,6 +103,7 @@
                 app:hintEnabled="false">
 
                 <AutoCompleteTextView
+                    android:id="@+id/vaccines"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_35sdp"
                     android:layout_marginTop="@dimen/_8sdp"
@@ -111,9 +112,12 @@
                     android:gravity="center_vertical"
                     android:inputType="none"
                     android:hint="Select Vaccine"
-                    android:textColor="#989D9F"
+                    
                     android:textStyle="italic"
                     android:textSize="@dimen/_12ssp"
+                    android:text="Polio (IPV)"
+                    android:maxLines="1"
+                    android:ellipsize="end"
                     />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -131,6 +135,7 @@
                 app:hintEnabled="false">
 
                 <AutoCompleteTextView
+                    android:id="@+id/location"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_35sdp"
                     android:layout_marginTop="@dimen/_8sdp"
@@ -138,9 +143,10 @@
                     android:paddingBottom="@dimen/_5sdp"
                     android:inputType="none"
                     android:hint="Select Location"
-                    android:textColor="#989D9F"
+                    
                     android:textStyle="italic"
                     android:textSize="@dimen/_12ssp"
+                    android:text="Yaba"
                     />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -158,6 +164,7 @@
                 app:hintEnabled="false">
 
                 <AutoCompleteTextView
+                    android:id="@+id/hospital_type"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_35sdp"
                     android:layout_marginTop="@dimen/_8sdp"
@@ -165,9 +172,10 @@
                     android:paddingBottom="@dimen/_5sdp"
                     android:inputType="none"
                     android:hint="Hospital Type"
-                    android:textColor="#989D9F"
+                    
                     android:textStyle="italic"
                     android:textSize="@dimen/_12ssp"
+                    android:text="Private"
                     />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -185,6 +193,7 @@
                 app:hintEnabled="false">
 
                 <AutoCompleteTextView
+                    android:id="@+id/hospital"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_35sdp"
                     android:layout_marginTop="@dimen/_8sdp"
@@ -192,9 +201,12 @@
                     android:paddingBottom="@dimen/_5sdp"
                     android:inputType="none"
                     android:hint="Select Hospital"
-                    android:textColor="#989D9F"
+                    
                     android:textStyle="italic"
                     android:textSize="@dimen/_12ssp"
+                    android:text="FEDERAL HOSPITAL"
+                    android:maxLines="1"
+                    android:ellipsize="end"
                     />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -219,7 +231,7 @@
                     android:paddingBottom="@dimen/_5sdp"
                     android:inputType="none"
                     android:hint="Select Date &amp; Time"
-                    android:textColor="#989D9F"
+                    android:text="2021-09-10, 10:20 AM"
                     android:textStyle="italic"
                     android:textSize="@dimen/_12ssp"
                     />
@@ -239,6 +251,7 @@
                 app:hintEnabled="false">
 
                 <AutoCompleteTextView
+                    android:id="@+id/pay_method"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_35sdp"
                     android:layout_marginTop="@dimen/_8sdp"
@@ -246,9 +259,10 @@
                     android:paddingBottom="@dimen/_5sdp"
                     android:inputType="none"
                     android:hint="Select Payment Option"
-                    android:textColor="#989D9F"
+                    
                     android:textStyle="italic"
                     android:textSize="@dimen/_12ssp"
+                    android:text="Debit"
                     />
 
             </com.google.android.material.textfield.TextInputLayout>

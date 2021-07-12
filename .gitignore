@@ -13,3 +13,5 @@
 .cxx
 local.properties
 /.idea/navEditor.xml
+/.idea/modules/app/KidVacc.app.iml
+/.gradle/buildOutputCleanup/buildOutputCleanup.lock

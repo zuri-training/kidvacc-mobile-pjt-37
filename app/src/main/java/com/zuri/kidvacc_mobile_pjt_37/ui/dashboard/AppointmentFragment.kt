@@ -1,23 +1,21 @@
 package com.zuri.kidvacc_mobile_pjt_37.ui.dashboard
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.android.volley.Response
-import com.android.volley.toolbox.JsonArrayRequest
 import com.google.android.material.button.MaterialButton
 import com.zuri.kidvacc_mobile_pjt_37.R
 import com.zuri.kidvacc_mobile_pjt_37.adapters.AppointmentAdapter
 import com.zuri.kidvacc_mobile_pjt_37.models.Appointment
-import com.zuri.kidvacc_mobile_pjt_37.networking.VolleyAuth
-import com.zuri.kidvacc_mobile_pjt_37.networking.VolleySingleton
 import com.zuri.kidvacc_mobile_pjt_37.ui.book_appointment.BookAppointmentFragment
 import java.util.*
 
@@ -33,16 +31,43 @@ class AppointmentFragment : Fragment() {
 
         val appointmentAdapter = AppointmentAdapter(dataSet)
         val appointmentList: RecyclerView = root.findViewById(R.id.appointment_list)
+        appointmentList.layoutManager = LinearLayoutManager(
+            requireActivity(),
+            LinearLayoutManager.VERTICAL,
+            false
+        )
         appointmentList.adapter = appointmentAdapter
+        appointmentAdapter.setOnItemClickListener(object : AppointmentAdapter.OnItemClickListener {
+            override fun onItemClick(view: View?, position: Int) {
+                val addAppointmentList: MutableLiveData<ArrayList<Appointment>> = appointmentViewModel.addAppointmentList
+                dataSet.removeAt(position)
+                appointmentAdapter.notifyItemRemoved(position)
+                appointmentAdapter.notifyDataSetChanged()
+                addAppointmentList.postValue(dataSet)
+            }
+        })
 
-        appointmentViewModel.addAppointment.observe(requireActivity(), {
-            dataSet.add(it)
-            appointmentAdapter.notifyItemInserted(dataSet.size-1)
+        /* appointmentViewModel.addAppointment.observe(requireActivity(), {
+             dataSet.add(it)
+             appointmentAdapter.notifyItemInserted(dataSet.size-1)
+         })*/
+
+        appointmentViewModel.addAppointmentList.observe(requireActivity(), {
+            val data = ArrayList<Appointment>()
+            data.addAll(it)
+            data.removeAll(dataSet)
+
+            dataSet.addAll(data)
+            appointmentAdapter.notifyItemInserted(dataSet.size - 1)
+            appointmentAdapter.notifyDataSetChanged()
         })
 
         root.findViewById<MaterialButton>(R.id.book_appointment).setOnClickListener {
             openBookAppointmentFragment()
-            getChild()
+        }
+
+        root.findViewById<ImageView>(R.id.back).setOnClickListener {
+            requireActivity().onBackPressed();
         }
         return root
     }
@@ -52,25 +77,5 @@ class AppointmentFragment : Fragment() {
         val fragmentTransaction: FragmentTransaction = fm.beginTransaction()
         fragmentTransaction.replace(R.id.fullscreen_frameLayout, BookAppointmentFragment())
         fragmentTransaction.commit()
-    }
-
-    private fun getChild(){
-        val jsonArrayRequest: JsonArrayRequest = object : JsonArrayRequest(
-            Method.GET, VolleyAuth.URL_CHILD_LIST, null,
-            Response.Listener { response ->
-                for (i in 0 until response.length()){
-                    val jsonObject = response.getJSONObject(i)
-                    val firstName = jsonObject.getString("First_name")
-                    Log.i("Name", firstName)
-                }},
-            Response.ErrorListener { error -> error.printStackTrace() }) {
-            override fun getHeaders(): Map<String, String> {
-                val headers: HashMap<String, String> = HashMap<String, String>()
-                headers.put("Authorization", "Token "+VolleyAuth.TOKEN)
-                return headers
-            }
-        }
-
-        VolleySingleton.getInstance(requireActivity()).addToRequestQueue(jsonArrayRequest)
     }
 }

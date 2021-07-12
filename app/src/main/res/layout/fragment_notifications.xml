@@ -6,19 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".ui.notifications.NotificationsFragment">
 
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#08517A" />
+
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_10sdp"
         android:layout_weight="1"
         android:gravity="center_vertical"
         android:text="@string/notifications"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
         android:textColor="#08517A"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/back"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
@@ -84,9 +94,9 @@
                             android:layout_marginStart="@dimen/_10sdp"/>
 
                         <LinearLayout
-                            android:layout_width="353dp"
-                            android:layout_height="53dp"
-                            android:layout_marginStart="-1dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_10sdp"
                             android:layout_marginEnd="@dimen/_5sdp"
                             android:layout_toEndOf="@id/view"
                             android:gravity="center_vertical"

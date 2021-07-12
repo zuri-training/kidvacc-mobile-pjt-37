@@ -5,19 +5,29 @@
     android:background="@color/background"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#08517A" />
+
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_10sdp"
         android:layout_weight="1"
         android:gravity="center_vertical"
         android:text="@string/appointments"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
         android:textColor="#08517A"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/back"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -40,8 +50,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constrainedHeight="true"/>
+        app:layout_constraintBottom_toTopOf="@id/book_appointment"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        app:layout_constrainedHeight="true"
+        android:requiresFadingEdge="vertical"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/book_appointment"

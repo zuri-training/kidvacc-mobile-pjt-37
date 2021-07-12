@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.KidVacc" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.KidVacc" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">#08517A</item>
         <item name="colorPrimaryVariant">#08517A</item>
@@ -15,4 +15,6 @@
         <item name="android:navigationBarColor" tools:targetApi="l">#121212</item>
         <!-- Customize your theme here. -->
     </style>
+
+
 </resources>

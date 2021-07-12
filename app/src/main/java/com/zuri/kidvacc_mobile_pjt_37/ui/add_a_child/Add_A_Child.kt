@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.Button
+import android.widget.ImageView
 import androidx.appcompat.widget.AppCompatSpinner
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -29,6 +30,10 @@ class Add_A_Child : Fragment() {
 
             }
         })*/
+        root.findViewById<ImageView>(R.id.back).setOnClickListener {
+            requireActivity().supportFragmentManager.beginTransaction().remove(this@Add_A_Child).commit();
+        }
+
         root.findViewById<Button>(R.id.edit_profile).setOnClickListener {
             requireActivity().supportFragmentManager.beginTransaction().remove(this@Add_A_Child).commit();
         }
