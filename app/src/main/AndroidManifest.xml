@@ -15,6 +15,8 @@
         android:theme="@style/Theme.KidVacc"
         >
 
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
         <activity android:name=".StartActivity" />
         <activity
             android:name=".MainActivity"
