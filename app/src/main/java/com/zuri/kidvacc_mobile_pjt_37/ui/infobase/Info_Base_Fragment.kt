@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.zuri.kidvacc_mobile_pjt_37.R
@@ -22,6 +23,10 @@ class Info_Base_Fragment : Fragment() {
         val root = inflater.inflate(R.layout.info__base__fragment, container, false)
 
         root.findViewById<Button>(R.id.submit).setOnClickListener {
+            requireActivity().supportFragmentManager.beginTransaction().remove(this@Info_Base_Fragment).commit();
+        }
+
+        root.findViewById<ImageView>(R.id.back).setOnClickListener {
             requireActivity().supportFragmentManager.beginTransaction().remove(this@Info_Base_Fragment).commit();
         }
 

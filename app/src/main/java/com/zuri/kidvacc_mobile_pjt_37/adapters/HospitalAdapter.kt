@@ -40,7 +40,7 @@ class HospitalAdapter (private val dataSet: ArrayList<Hospital>) : RecyclerView.
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
         val appointment = dataSet[position]
         viewHolder.name.text = appointment.name
-        viewHolder.address.text = appointment.type
+        viewHolder.address.text = appointment.address
     }
 
     override fun getItemCount() = dataSet.size

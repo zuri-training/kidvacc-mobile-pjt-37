@@ -6,10 +6,12 @@ import android.os.Bundle
 import android.text.Spannable
 import android.text.SpannableStringBuilder
 import android.text.style.StyleSpan
+import android.util.ArrayMap
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.fragment.app.Fragment
@@ -40,8 +42,12 @@ class HospitalFragment : Fragment() {
         privateHospitalTextView = root.findViewById(R.id.private_hospital)
         publicHospitalTextView = root.findViewById(R.id.public_hosital)
 
+        root.findViewById<ImageView>(R.id.back).setOnClickListener {
+            requireActivity().supportFragmentManager.beginTransaction().remove(this@HospitalFragment).commit();
+        }
+
         makeBold(privateHospitalTextView)
-        getHospital(root)
+        getHospitalDetails(root)
         return root
     }
 
@@ -71,6 +77,7 @@ class HospitalFragment : Fragment() {
                     val hospital = Hospital()
                     hospital.name = name
                     hospital.type = type
+                    hospital.address = hospitalSet[name]
 
                     if (type.equals("public")) {
                         hospitalPublic.add(hospital)
@@ -116,6 +123,47 @@ class HospitalFragment : Fragment() {
                         privateHospitalTextView?.setOnClickListener {
                             viewPager!!.setCurrentItem(0, true)
                         }
+                    }
+                    // root.findViewById<AutoCompleteTextView>(R.id.name).setAdapter(childAdapter);
+                }
+            },
+            Response.ErrorListener { error ->
+                error.printStackTrace()
+                progressDialog.dismiss()
+            }) {
+            override fun getHeaders(): Map<String, String> {
+                val headers: HashMap<String, String> = HashMap<String, String>()
+                headers["Authorization"] = "Token "+ VolleyAuth.TOKEN
+                return headers
+            }
+        }
+
+        VolleySingleton.getInstance(requireActivity()).addToRequestQueue(jsonArrayRequest)
+    }
+
+    val hospitalSet: ArrayMap<String,String> = ArrayMap()
+    private fun getHospitalDetails(root: View){
+        val progressDialog = ProgressDialog(requireActivity())
+        progressDialog.setTitle("Please Wait")
+        progressDialog.setMessage("Getting Hospitals")
+        progressDialog.setCancelable(false)
+        progressDialog.setCanceledOnTouchOutside(false)
+        progressDialog.show()
+
+        val jsonArrayRequest: JsonArrayRequest = object : JsonArrayRequest(
+            Method.GET, VolleyAuth.URL_HOSPITAL_DETAIL, null,
+            Response.Listener { response ->
+                progressDialog.dismiss()
+                requireActivity().findViewById<RelativeLayout>(R.id.progressBarLayout).visibility =
+                    View.GONE
+                Log.i("response", response.toString())
+                for (i in 0 until response.length()) {
+                    val jsonObject = response.getJSONObject(i)
+                    val address = jsonObject.getString("address")
+                    val name = jsonObject.getString("name")
+                    hospitalSet[name] = address
+                    if (i >= response.length()-1){
+                        getHospital(root)
                     }
                     // root.findViewById<AutoCompleteTextView>(R.id.name).setAdapter(childAdapter);
                 }

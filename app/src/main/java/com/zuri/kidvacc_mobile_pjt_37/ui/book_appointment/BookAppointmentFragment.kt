@@ -6,11 +6,10 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import android.widget.AutoCompleteTextView
-import android.widget.ImageButton
-import android.widget.RelativeLayout
+import android.widget.*
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModelProvider
 import com.android.volley.Response
@@ -21,6 +20,7 @@ import com.zuri.kidvacc_mobile_pjt_37.models.Appointment
 import com.zuri.kidvacc_mobile_pjt_37.networking.VolleyAuth
 import com.zuri.kidvacc_mobile_pjt_37.networking.VolleySingleton
 import com.zuri.kidvacc_mobile_pjt_37.ui.dashboard.AppointmentViewModel
+import org.json.JSONObject
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -37,7 +37,7 @@ class BookAppointmentFragment : Fragment() {
         childList = ArrayList()
         val root = inflater.inflate(R.layout.book_appointment_fragment, container, false)
 
-        val vaccines = listOf("Polio (IPV)", "Pneumococcal (PCV)", "Rotavirus (RV)", "Hepatitis B", "Diphtheria, tetanus, and whooping cough (pertussis) (DTaP)", "Haemophilus influenzae type b (Hib)")
+        val vaccines = listOf("BCG (Tubercolosis)", "Whopping Cough", "Measles", "Polio (IPV)", "Pneumococcal (PCV)", "Rotavirus (RV)", "Hepatitis B", "Diphtheria, tetanus, and whooping cough (pertussis) (DTaP)", "Haemophilus influenzae type b (Hib)")
         val hospitals = listOf("ST. CLAIRE’S PAEDIATRICS", "NEW LIFE HOSPITAL", "REDDINGTON HOSPITAL", "LAGOON HOSPITAL", "HOLY CROSS MATERNITY" +
                 "UNIVERSITY TEACHING HOSPITAL,UNIVERSITY TEACHING HOSPITAL", "FEDERAL HOSPITAL")
         val hospitalsType = listOf("Public", "Private")
@@ -63,7 +63,7 @@ class BookAppointmentFragment : Fragment() {
         }
 
         root.findViewById<MaterialButton>(R.id.schedule_appointment).setOnClickListener {
-           // val addAppointment: MutableLiveData<Appointment> = appointmentViewModel.addAppointment
+            val addAppointment: MutableLiveData<Appointment> = appointmentViewModel.addAppointment
             val addAppointmentList: MutableLiveData<java.util.ArrayList<Appointment>> = appointmentViewModel.addAppointmentList
             val appointment = Appointment()
 
@@ -81,9 +81,8 @@ class BookAppointmentFragment : Fragment() {
 
             appointmentList.add(appointment)
             addAppointmentList.postValue(appointmentList)
-            //addAppointment.postValue(appointment)
-
-            requireActivity().supportFragmentManager.beginTransaction().remove(this@BookAppointmentFragment).commit();
+            addAppointment.postValue(appointment)
+            appointment(4, appointment.date_due!!)
         }
 
         getChild(root)
@@ -116,6 +115,43 @@ class BookAppointmentFragment : Fragment() {
                 }},
             Response.ErrorListener { error -> error.printStackTrace()
                 progressDialog.dismiss()}) {
+            override fun getHeaders(): Map<String, String> {
+                val headers: HashMap<String, String> = HashMap<String, String>()
+                headers["Authorization"] = "Token "+ VolleyAuth.TOKEN
+                return headers
+            }
+        }
+
+        VolleySingleton.getInstance(requireActivity()).addToRequestQueue(jsonArrayRequest)
+    }
+
+    private fun appointment(
+        child: Int,
+        username: String,
+    ){
+        val progressDialog = ProgressDialog(requireActivity())
+        progressDialog.setTitle("Please Wait")
+        progressDialog.setMessage("Booking Appointment")
+        progressDialog.show()
+
+        val jsonBodyAuth = JSONObject()
+        jsonBodyAuth.put("child", ""+child)
+        jsonBodyAuth.put("email","2021-07-13")
+
+        val jsonArrayRequest: JsonArrayRequest = object : JsonArrayRequest(
+            Method.GET, VolleyAuth.URL_APPOINTMENT, null,
+            Response.Listener { response ->
+                progressDialog.dismiss()
+                val fm: FragmentManager = requireActivity().supportFragmentManager
+                val fragmentTransaction: FragmentTransaction = fm.beginTransaction()
+                fragmentTransaction.replace(R.id.fullscreen_frameLayout, ConfirmDetailsFragment())
+                fragmentTransaction.commit()
+                requireActivity().supportFragmentManager.beginTransaction().remove(this@BookAppointmentFragment).commit();
+            },
+            Response.ErrorListener { error ->
+                error.printStackTrace()
+                progressDialog.dismiss()
+            }) {
             override fun getHeaders(): Map<String, String> {
                 val headers: HashMap<String, String> = HashMap<String, String>()
                 headers["Authorization"] = "Token "+ VolleyAuth.TOKEN
