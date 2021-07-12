@@ -67,6 +67,7 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
 
                 <TextView
+                    android:id="@+id/child_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Adebayo Tochi"
@@ -101,6 +102,7 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
 
                 <TextView
+                    android:id="@+id/date_of_birth"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="02 JUNE 2021"
@@ -251,6 +253,7 @@
             </LinearLayout>
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/proceed"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_20sdp"

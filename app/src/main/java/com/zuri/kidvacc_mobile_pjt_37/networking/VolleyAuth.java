@@ -7,12 +7,14 @@ public class VolleyAuth {
 
     public static final String URL_REGISTER = ROOT_AUTH_URL + "registration/";
     public static final String URL_LOGIN= ROOT_AUTH_URL + "login/";
+    public static final String URL_LOGOUT= ROOT_AUTH_URL + "logout/";
 
     public static final String URL_CHILD_LIST= ROOT_DATA_URL + "/api/child/child";
     public static final String URL_PARENT_LIST= ROOT_DATA_URL + "/api/child/parent";
 
     public static final String URL_APPOINTMENT= ROOT_DATA_URL + "/api/child/appointment";
     public static final String URL_HOSPITAL_TYPE= ROOT_DATA_URL + "/api/child/hospital_type";
+    public static final String URL_HOSPITAL_DETAIL= ROOT_DATA_URL + "/api/child/hospital_details";
 
     public static final String URL_PAYMENTS= ROOT_PAYMENT_URL + "my-payments/";
     public static final String URL_MAKE_PAYMENT= ROOT_PAYMENT_URL + "make-payment/";
