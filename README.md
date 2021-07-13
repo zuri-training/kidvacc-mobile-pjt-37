@@ -68,6 +68,36 @@ The reason behind this app idea is that children are often given the wrong vacci
     <td><img src="App ScreenShots/Screenshot_20210705-112556.png" width=250 height=480></td>
   </tr>
  </table>
+ 
+ <table>
+  <tr>
+    <td>Notifications</td>
+    <td>Appointments</td>
+    <td>Profile</td>
+    <td>Settings</td>
+  </tr>
+  <tr>
+    <td><img src="App ScreenShots/Screenshot_20210713-202520.png" width=250 height=480></td>
+    <td><img src="App ScreenShots/Screenshot_20210713-202529.png" width=250 height=480></td>
+    <td><img src="App ScreenShots/Screenshot_20210713-202533.png" width=250 height=480></td>
+    <td><img src="App ScreenShots/Screenshot_20210713-202542.png" width=250 height=480></td>
+  </tr>
+ </table>
+ 
+ <table>
+  <tr>
+    <td>Payments Details</td>
+    <td>Appointment Confirmation</td>
+    <td>Book Appointment</td>
+    <td>Hospital List</td>
+  </tr>
+  <tr>
+    <td><img src="App ScreenShots/Screenshot_20210713-202618.png" width=250 height=480></td>
+    <td><img src="App ScreenShots/Screenshot_20210713-202615.png" width=250 height=480></td>
+    <td><img src="App ScreenShots/Screenshot_20210713-202611.png" width=250 height=480></td>
+    <td><img src="App ScreenShots/Screenshot_20210713-202602.png" width=250 height=480></td>
+  </tr>
+ </table>
 
 - [Additional Info](https://docs.google.com/spreadsheets/u/0/d/12XfMgeXYsXKR3ycP-vXLj7sEBXBN47oo1o5kHayHUZc/htmlview#)
 - [Download APK FIle](https://github.com/zuri-training/kidvacc-mobile-pjt-37/blob/main/app/release/app-release.apk)
@@ -95,12 +125,12 @@ The reason behind this app idea is that children are often given the wrong vacci
 - [Mohammed	Bida	Abdullahi](https://github.com/Mbidaiii)
 - [Adeniji	Muideen	Adeyemi](https://github.com/Tommie333)
 - [Ayomide	Michael	Adenowo](https://github.com/Ay4realz)
-# Frontend
+# Front-End
 - [Osinaya	Samson	Oluwadamilare](https://github.com/RenegadeGandhi)
 - [Ezeugo	Felistus	Obieze](https://github.com/felistus)
 - [Gods'Favour	Toluwalope	Omoare](https://github.com/Bebek-Hub)
 - [Yusuf	Abiola	Ajaga](https://github.com/yousouph246)
-# Backend
+# Back-End
 - [Elizabeth Eli](https://github.com/Duvie728)
 - [Oluwadamilare	Felix	Michael](https://github.com/Michaeloluwadamilare)
 - [Ruth	Ude](https://github.com/RuthJane)
