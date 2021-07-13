@@ -64,6 +64,7 @@ The reason behind this app idea is that children are often given the wrong vacci
  </table>
 
 - [Additional Info](https://docs.google.com/spreadsheets/u/0/d/12XfMgeXYsXKR3ycP-vXLj7sEBXBN47oo1o5kHayHUZc/htmlview#)
+## [Download APK FIle](https://github.com/zuri-training/kidvacc-mobile-pjt-37/blob/main/app/release/app-release.apk)
 
 # Links To Design,Web Repository And Mobile Repository
 - [Designs Made In Figma](https://www.figma.com/file/6GyjztMHKTzQtcFR56CSp0/Kidvacc?node-id=42%3A2)
