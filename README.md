@@ -1,5 +1,10 @@
 # kidvacc-mobile-pjt-37
+<p align="left">
+  <a href="https://www.gnu.org/licenses/agpl-3.0.en.html"><img alt="License" src="https://img.shields.io/badge/License-AGPL%203.0-blue.svg"/></a>
+  <a href="https://android-arsenal.com/api?level=21"><img alt="API" src="https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat"/></a>
+</p>
 
+## Kidvacc
 ## Overview
 
 This is a mobile app that links parents to their choice of hospital for the vaccination of their Ward/Children. The parents will be educated on the required vaccination to be administered to their wards/Children based on their age range. It would an app that helps the ward's parent have knowledge of the vaccine that their child/ward is due for, Nearest location hospital or pead hospital, ability to choose between public or private hospitals, and the ability to book appointment/slot before hand and even make payment.
