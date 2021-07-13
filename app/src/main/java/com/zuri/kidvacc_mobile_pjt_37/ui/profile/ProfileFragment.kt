@@ -66,7 +66,7 @@ class ProfileFragment : Fragment() {
 
         val progressDialog = ProgressDialog(requireActivity())
         progressDialog.setTitle("Please Wait")
-        progressDialog.setMessage("Adding Child")
+        progressDialog.setMessage("Signing Out")
         progressDialog.setCancelable(false)
         progressDialog.setCanceledOnTouchOutside(false)
         progressDialog.show()
