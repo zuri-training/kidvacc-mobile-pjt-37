@@ -1,10 +1,11 @@
-# kidvacc-mobile-pjt-37
-<p align="left">
+<h1 align="center">Kidvacc</h1></br>
+<p align="center">
   <a href="https://www.gnu.org/licenses/agpl-3.0.en.html"><img alt="License" src="https://img.shields.io/badge/License-AGPL%203.0-blue.svg"/></a>
   <a href="https://android-arsenal.com/api?level=21"><img alt="API" src="https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat"/></a>
 </p>
 
-## Kidvacc
+# kidvacc-mobile-pjt-37
+
 ## Overview
 
 This is a mobile app that links parents to their choice of hospital for the vaccination of their Ward/Children. The parents will be educated on the required vaccination to be administered to their wards/Children based on their age range. It would an app that helps the ward's parent have knowledge of the vaccine that their child/ward is due for, Nearest location hospital or pead hospital, ability to choose between public or private hospitals, and the ability to book appointment/slot before hand and even make payment.
@@ -69,7 +70,15 @@ The reason behind this app idea is that children are often given the wrong vacci
  </table>
 
 - [Additional Info](https://docs.google.com/spreadsheets/u/0/d/12XfMgeXYsXKR3ycP-vXLj7sEBXBN47oo1o5kHayHUZc/htmlview#)
-## [Download APK FIle](https://github.com/zuri-training/kidvacc-mobile-pjt-37/blob/main/app/release/app-release.apk)
+- [Download APK FIle](https://github.com/zuri-training/kidvacc-mobile-pjt-37/blob/main/app/release/app-release.apk)
+## Libaries Used
+- [Volley](https://github.com/google/volley)
+- [Volley Plus](https://github.com/DWorkS/VolleyPlus)
+- [Expansion Libary](https://github.com/florent37/ExpansionPanel)
+- [Fancy Toast](https://github.com/Shashank02051997/FancyToast-Android)
+- [Password Strength Checker Android](https://github.com/yesterselga/password-strength-checker-android)
+- [SDP - a scalable size unit](https://github.com/intuit/sdp)
+- [SSP - a scalable size unit for texts](https://github.com/intuit/ssp)
 
 # Links To Design,Web Repository And Mobile Repository
 - [Designs Made In Figma](https://www.figma.com/file/6GyjztMHKTzQtcFR56CSp0/Kidvacc?node-id=42%3A2)
