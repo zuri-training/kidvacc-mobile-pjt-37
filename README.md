@@ -31,7 +31,7 @@ The reason behind this app idea is that children are often given the wrong vacci
 - Infobase with commonly asked question and answers
 - Abilty to add and update children info, e.t.c.
 - [Additional Info](https://docs.google.com/spreadsheets/u/0/d/12XfMgeXYsXKR3ycP-vXLj7sEBXBN47oo1o5kHayHUZc/htmlview#)
-- [Download APK FIle](https://github.com/zuri-training/kidvacc-mobile-pjt-37/blob/main/app/release/app-release.apk)
+- [Download APP](https://github.com/zuri-training/kidvacc-mobile-pjt-37/blob/main/app/release/app-release.apk)
 
 ## App ScreenShots
 <table>
